@@ -1,4 +1,4 @@
-import { makes, models } from "@/data/Lists"
+import { makes, models } from "@/data/Lists";
 import {
     Select,
     SelectContent,
@@ -19,10 +19,9 @@ function valuetext(value: number) {
 }
 
 const Filters = () => {
-
     const [value, setValue] = useState<number[]>([1000, 5000]);
 
-    const handleChange = (event: Event, newValue: number | number[]) => {
+    const handleChange = (newValue: number | number[]) => {
         setValue(newValue as number[]);
     };
 
@@ -37,7 +36,7 @@ const Filters = () => {
                         <SelectGroup>
                             <SelectLabel>Make</SelectLabel>
                             {makes.map((m, index) => (
-                                <SelectItem value="apple" key={index}>{m}</SelectItem>
+                                <SelectItem value={m} key={index}>{m}</SelectItem>
                             ))}
                         </SelectGroup>
                     </SelectContent>
@@ -53,7 +52,7 @@ const Filters = () => {
                         <SelectGroup>
                             <SelectLabel>Models</SelectLabel>
                             {models.map((m, index) => (
-                                <SelectItem value="apple" key={index}>{m}</SelectItem>
+                                <SelectItem value={m} key={index}>{m}</SelectItem>
                             ))}
                         </SelectGroup>
                     </SelectContent>
@@ -63,9 +62,9 @@ const Filters = () => {
             <div>
                 <Box sx={{ width: '100%' }}>
                     <Slider
-                        getAriaLabel={() => 'Temperature range'}
+                        getAriaLabel={() => 'Price range'}
                         value={value}
-                        onChange={handleChange}
+                        onChange={(_, newValue) => handleChange(newValue)}
                         valueLabelDisplay="auto"
                         getAriaValueText={valuetext}
                         min={100}
@@ -75,12 +74,12 @@ const Filters = () => {
             </div>
 
             <div>
-                <Button className="w-full bg-red-700 p-6">
-                    <IoSearch />  2356 Cars
+                <Button className="w-full bg-red-700 p-6 text-white flex items-center justify-center">
+                    <IoSearch className="mr-2" /> 2356 Cars
                 </Button>
             </div>
         </div>
-    )
+    );
 }
 
-export default Filters
+export default Filters;
