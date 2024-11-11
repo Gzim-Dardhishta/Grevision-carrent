@@ -1,5 +1,6 @@
 import brandLogo from '../assets/6.png'
 import car from '../assets/thum7.jpg'
+import carImg from '../assets/c5.png'
 
 export const NavLinks = {
     home: [
@@ -233,3 +234,31 @@ export const cars = [
         imageUrl: car
     }
 ];
+
+
+export const carsCategory = [
+    {
+        image: carImg,
+        name: 'Supercar'
+    },
+    {
+        image: carImg,
+        name: 'Supercar'
+    },
+    {
+        image: carImg,
+        name: 'Supercar'
+    },
+    {
+        image: carImg,
+        name: 'Supercar'
+    },
+    {
+        image: carImg,
+        name: 'Supercar'
+    },
+    {
+        image: carImg,
+        name: 'Supercar'
+    }
+]
