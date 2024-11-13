@@ -1,6 +1,7 @@
 import brandLogo from '../assets/6.png'
 import car from '../assets/thum7.jpg'
 import carImg from '../assets/c5.png'
+import popularCar from '../assets/2.jpg'
 
 export const NavLinks = {
     home: [
@@ -262,3 +263,32 @@ export const carsCategory = [
         name: 'Supercar'
     }
 ]
+
+export const popularCars = [
+    {
+        id: 1,
+        featured: true,
+        year: 2023,
+        model: "Mini Cooper 3 Similar",
+        name: "Chevrolet Suburban 2021 mo",
+        fuelType: "Petrol",
+        mileage: "90 k.m",
+        transmission: "Auto",
+        price: "$3958",
+        originalPrice: "$7894",
+        image: popularCar,
+    },
+    {
+        id: 2,
+        featured: true,
+        year: 2023,
+        model: "Mini Cooper 3 Similar",
+        name: "Chevrolet Suburban 2021 mo",
+        fuelType: "Petrol",
+        mileage: "90 k.m",
+        transmission: "Auto",
+        price: "$3958",
+        originalPrice: "$7894",
+        image: popularCar,
+    },
+];

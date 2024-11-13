@@ -1,8 +1,11 @@
 import { Banner } from '@/Components/Banner1'
+import { BestSellingCar } from '@/Components/BestSellingCars'
 import { CarsBrands } from '@/Components/Brands'
 import { BrowseCars } from '@/Components/BrowseCarsCategory'
 import { CarsList } from '@/Components/CarsHomePage'
 import { Header } from '@/Components/Header'
+import { PartnerSlider } from '@/Components/Partners'
+import { PopularCarsList } from '@/Components/PopularCars'
 
 const HomePage = () => {
     return (
@@ -12,6 +15,9 @@ const HomePage = () => {
             <CarsBrands />
             <CarsList />
             <BrowseCars />
+            <PartnerSlider />
+            <PopularCarsList />
+            <BestSellingCar />
         </div>
     )
 }
