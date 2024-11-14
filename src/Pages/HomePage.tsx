@@ -3,6 +3,7 @@ import { BestSellingCar } from '@/Components/BestSellingCars'
 import { CarsBrands } from '@/Components/Brands'
 import { BrowseCars } from '@/Components/BrowseCarsCategory'
 import { CarsList } from '@/Components/CarsHomePage'
+import { Deals } from '@/Components/DealsStats'
 import { Header } from '@/Components/Header'
 import { PartnerSlider } from '@/Components/Partners'
 import { PopularCarsList } from '@/Components/PopularCars'
@@ -18,6 +19,7 @@ const HomePage = () => {
             <PartnerSlider />
             <PopularCarsList />
             <BestSellingCar />
+            <Deals />
         </div>
     )
 }

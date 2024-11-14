@@ -14,7 +14,7 @@ export default {
   		},
       colors: {},
       animation: {
-        slowSlide: 'slowSlide 60s linear infinite', // 60 seconds for a slower slide
+        slowSlide: 'slowSlide 60s linear infinite',
       },
       keyframes: {
         slowSlide: {
@@ -22,6 +22,9 @@ export default {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
+      backgroundImage: {
+        'parallax': 'url("./src/assets/bg2.8bfe776b.jpg")'
+      }
   	}
   },
   plugins: [require("tailwindcss-animate")],

@@ -2,6 +2,7 @@ import brandLogo from '../assets/6.png'
 import car from '../assets/thum7.jpg'
 import carImg from '../assets/c5.png'
 import popularCar from '../assets/2.jpg'
+import { CarIcon } from '@/icons'
 
 export const NavLinks = {
     home: [
@@ -291,4 +292,12 @@ export const popularCars = [
         originalPrice: "$7894",
         image: popularCar,
     },
+];
+
+
+export const statistics = [
+    { id: 1, icon: <CarIcon />, target: 1200, label: "Vehicle In Stock Cars" },
+    { id: 2, icon: <CarIcon />, target: 120, label: "Satisfied Customers" },
+    { id: 3, icon: <CarIcon />, target: 1200, label: "Award Achievement" },
+    { id: 4, icon: <CarIcon />, target: 60, label: "Total Showroom" },
 ];
