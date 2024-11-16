@@ -301,3 +301,35 @@ export const statistics = [
     { id: 3, icon: <CarIcon />, target: 1200, label: "Award Achievement" },
     { id: 4, icon: <CarIcon />, target: 60, label: "Total Showroom" },
 ];
+
+export const clientReviews = [
+    {
+        service: "Trusted Car Dealer Service",
+        title: "What Client’s Says",
+        message: "The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure Events moment.Dislike men who are so beguiled and demoraliz worlds by the charms of pleasure “",
+        name: "Leslie Alexander",
+        designation: "ThemeForest Exclusive"
+    },
+    {
+        service: "Reliable Auto Sales",
+        title: "What Client’s Says",
+        message: "The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure Events moment.Dislike men who are so beguiled and demoraliz worlds by the charms of pleasure “",
+        name: "John Doe",
+        designation: "Verified Buyer",
+    },
+    {
+        service: "Top-Notch Customer Service",
+        title: "What Client’s Says",
+        message: "The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure Events moment.Dislike men who are so beguiled and demoraliz worlds by the charms of pleasure “",
+        name: "Jane Smith",
+        designation: "Long-Term Customer"
+    },
+    {
+        service: "Trusted Vehicle Solutions",
+        title: "What Client’s Says",
+        message: "The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure Events moment.Dislike men who are so beguiled and demoraliz worlds by the charms of pleasure “",
+        name: "Michael Johnson",
+        designation: "First-Time Buyer"
+    }
+];
+
