@@ -1,6 +1,5 @@
 import { carsCategory } from '@/data/Lists'
 import bgImage from '../../assets/bg1.ef9c8a7e.jpg'
-import { Button } from '../ui/button'
 import { MdArrowOutward } from 'react-icons/md'
 
 const BrowseCars = () => {
@@ -18,7 +17,7 @@ const BrowseCars = () => {
                     For 15 years, we raising the standard of used car retailing with one of the most innovative and reliable used vehicle
                 </div>
                 <div>
-                    <Button className='text-lg bg-red-700 p-7'>View All Listing</Button>
+                    <button className='text-lg bg-red-700 text-white px-7 py-4 rounded-lg hover:bg-[#131351]'>View All Listing</button>
                 </div>
 
             </div>

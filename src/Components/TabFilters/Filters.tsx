@@ -11,7 +11,6 @@ import {
 import { useState } from "react";
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-import { Button } from "../ui/button";
 import { IoSearch } from "react-icons/io5";
 
 function valuetext(value: number) {
@@ -74,9 +73,9 @@ const Filters = () => {
             </div>
 
             <div>
-                <Button className="w-full bg-red-700 p-6 text-white flex items-center justify-center">
+                <button className="w-full bg-red-700 py-3 rounded-lg text-white flex items-center justify-center">
                     <IoSearch className="mr-2" /> 2356 Cars
-                </Button>
+                </button>
             </div>
         </div>
     );

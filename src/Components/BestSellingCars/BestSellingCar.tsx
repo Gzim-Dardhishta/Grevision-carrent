@@ -4,7 +4,6 @@ import car from '../../assets/car.png'
 import { FaGasPump } from "react-icons/fa6";
 import { MdSpeed } from "react-icons/md";
 import { GiGearStickPattern } from "react-icons/gi";
-import { Button } from '../ui/button';
 import { useState } from 'react';
 import { FiPlus } from "react-icons/fi";
 
@@ -119,7 +118,7 @@ const BestSellingCar = () => {
                         </div>
 
                         <div>
-                            <Button className='bg-red-700 text-white hover:bg-[#0c092b] py-6 px-10'>Buy now</Button>
+                            <button className='bg-red-700 text-white hover:bg-[#0c092b] py-4 px-10 rounded-lg'>Buy now</button>
                         </div>
                     </div>
                 </div>

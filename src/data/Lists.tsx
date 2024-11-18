@@ -3,6 +3,7 @@ import car from '../assets/thum7.jpg'
 import carImg from '../assets/c5.png'
 import popularCar from '../assets/2.jpg'
 import { CarIcon } from '@/icons'
+import porche from '../assets/wg2.jpg'
 
 export const NavLinks = {
     home: [
@@ -333,3 +334,59 @@ export const clientReviews = [
     }
 ];
 
+
+
+
+export const businessCars = [
+    {
+        category: "Business",
+        image: porche,
+        author: "Mehedii.H",
+        comments: "03",
+        title: "Five Ways That Can Develop Your Business",
+        description: "The time it takes to paint a car repair depends on various factors.",
+    },
+    {
+        category: "Business",
+        image: porche,
+        author: "Mehedii.H",
+        comments: "03",
+        title: "Five Ways That Can Develop Your Business",
+        description: "The time it takes to paint a car repair depends on various factors.",
+    },
+    {
+        category: "Business",
+        image: porche,
+        author: "Mehedii.H",
+        comments: "03",
+        title: "Five Ways That Can Develop Your Business",
+        description: "The time it takes to paint a car repair depends on various factors.",
+    },
+];
+
+
+
+export const footerLinks = [
+    {
+        category: "Quick Links",
+        links: [
+            { name: "Dealer Locator", url: "/" },
+            { name: "Service Locator", url: "/" },
+            { name: "Pre-owned", url: "/" },
+            { name: "Accessori Originali", url: "/" },
+            { name: "Spare Parts", url: "/" },
+            { name: "Services", url: "/" },
+        ],
+    },
+    {
+        category: "Research",
+        links: [
+            { name: "Build & Price A Vehicle", url: "/" },
+            { name: "Compare Models", url: "/" },
+            { name: "Warranty", url: "/" },
+            { name: "Download a Brochure", url: "/" },
+            { name: "Sign-Up for Updates", url: "/" },
+            { name: "Mail Me a Brochure", url: "/" },
+        ],
+    },
+];

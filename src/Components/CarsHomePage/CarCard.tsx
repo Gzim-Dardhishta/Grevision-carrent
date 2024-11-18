@@ -28,17 +28,17 @@ const CarCard: FC<CarCardProps> = ({ car }) => {
     return (
         <div className="border rounded-lg overflow-hidden shadow-lg relative bg-white">
             {car.featured && (
-                <div className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs uppercase rounded">
+                <div className="absolute top-2 left-2 bg-red-600 text-white px-4 py-1 rounded">
                     Featured
                 </div>
             )}
 
             <div className="absolute top-2 right-2 flex space-x-1">
-                <div className="flex items-center bg-white text-gray-800 px-2 py-1 rounded text-xs shadow">
+                <div className="flex items-center bg-white text-gray-800 px-2 py-1 rounded shadow">
                     <FiCamera className="mr-1" />
                     {car.imagesCount}
                 </div>
-                <div className="bg-red-600 text-white px-2 py-1 text-xs rounded">
+                <div className="bg-red-600 text-white px-2  py-1 rounded">
                     {car.year}
                 </div>
             </div>
