@@ -1,6 +1,4 @@
 import { FaPhoneVolume } from "react-icons/fa6";
-import { Button } from "../ui/button";
-
 
 const TopInfo = () => {
     return (
@@ -21,7 +19,7 @@ const TopInfo = () => {
                         </div>
                     </div>
                     <div>
-                        <Button className="p-7 px-10 text-[1em] font-medium hover:bg-[#0c0a26] hover:text-white bg-white text-black">More Listing</Button>
+                        <button className="p-5 px-10 rounded-lg duration-200 ease-in-out text-[1em] font-medium hover:bg-[#0c0a26] hover:text-white bg-white text-black">More Listing</button>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import { cars } from "@/data/Lists";
-import { Button } from "../ui/button"
 import { useState } from "react";
 import CarCard from "./CarCard";
 
@@ -15,7 +14,7 @@ const CarsList = () => {
 
 
     return (
-        <div className="py-20 md:px-20 px-10">
+        <div className="py-20 lg:px-20 px-10">
 
             <div className="mb-10 flex md:flex-row flex-col justify-between md:items-center">
                 <div className="md:mb-0 mb-8">
@@ -26,7 +25,7 @@ const CarsList = () => {
 
                 <div className="flex">
                     {tabs.map((tab) => (
-                        <Button
+                        <button
                             key={tab.value}
                             onClick={() => setSelected(tab.value)}
                             className={`relative px-4 py-2 rounded-md font-semibold hover:bg-red-600 hover:text-white ${selected === tab.value
@@ -38,7 +37,7 @@ const CarsList = () => {
                             {selected === tab.value && (
                                 <span className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-red-600"></span>
                             )}
-                        </Button>
+                        </button>
                     ))}
                 </div>
             </div>

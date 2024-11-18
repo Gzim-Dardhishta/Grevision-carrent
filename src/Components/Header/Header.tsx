@@ -1,4 +1,3 @@
-
 import MediaHeader from './MediaHeader'
 import Navbar from './Navbar'
 

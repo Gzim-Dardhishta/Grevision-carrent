@@ -43,19 +43,19 @@ const Deals = () => {
 
     return (
         <div className="h-[550px] bg-parallax bg-center bg-cover bg-fixed lg:px-20 px-10">
-            <div className=" flex justify-between items-center pt-24 mb-20">
+            <div className=" flex lg:flex-row flex-col justify-between items-center pt-24 mb-20">
                 <div>
                     <h5 className="text-red-500 text-sm tracking-wide mb-4 border-b border-red-500 font-medium w-fit">FIND YOUR CAR BY CAR BRAND</h5>
                     <h4 className="text-white text-5xl font-semibold">
                         Leading The Best Car<br />Dealers In USA
                     </h4>
                 </div>
-                <p className="text-md md:text-lg mt-4 w-2/5 text-white">
+                <p className="text-md md:text-lg mt-4 lg:w-2/5 text-white">
                     There are many variations of simply free text passages of Lorem available but the majority have suffered alteration in some form by injected humour randomized words which don't slightly.
                 </p>
             </div>
 
-            <div className="border bg-white p-7 px-10 grid grid-cols-4 gap-6 mt-12">
+            <div className="border bg-white p-7 px-10 grid lg:grid-cols-4 md:grid-cols-2 gap-6 mt-12">
                 {statistics.map((stat) => (
                     <CounterCard
                         key={stat.id}

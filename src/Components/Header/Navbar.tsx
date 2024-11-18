@@ -6,12 +6,14 @@ import {
     HoverCardTrigger,
 } from "../ui/hover-card"
 import { Link } from 'react-router-dom'
-import { Button } from "../ui/button"
 import { FiPlusCircle } from "react-icons/fi";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FiMenu } from "react-icons/fi";
+import { useState } from 'react'
+import { LoginPopUp } from '../Login'
 
 const Navbar = () => {
+    const [isLoginOpen, setIsLoginOpen] = useState(false)
     return (
         <div className='flex items-center justify-between bg-white xl:mx-20 mx-10 p-5 rounded-b-xl shadow'>
             <div>
@@ -78,12 +80,12 @@ const Navbar = () => {
             </div>
 
             <div className='lg:flex hidden items-center gap-5'>
-                <div className=''>
+                <div className='flex items-center'>
                     <Link to={''} className='hover:text-red-700'>Register /  </Link>
-                    <Link to={''} className='hover:text-red-700'>Log In</Link>
+                    <div onClick={() => setIsLoginOpen(true)} className='hover:text-red-700 cursor-pointer'>Log In</div>
                 </div>
                 <Link to={'/'}>
-                    <Button className='p-6 hover:bg-red-700'>Listing yours <FiPlusCircle /></Button>
+                    <button className='py-4 px-7 hover:bg-red-700 rounded-lg hover:text-white flex items-center gap-2'>Listing yours <FiPlusCircle /></button>
                 </Link>
             </div>
 
@@ -91,6 +93,10 @@ const Navbar = () => {
                 <FiMenu size={30} />
             </div>
 
+
+            {isLoginOpen && (
+                <LoginPopUp setIsOpen={setIsLoginOpen} />
+            )}
         </div>
     )
 }
