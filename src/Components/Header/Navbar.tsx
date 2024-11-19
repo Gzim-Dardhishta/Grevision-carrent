@@ -11,9 +11,17 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { FiMenu } from "react-icons/fi";
 import { useState } from 'react'
 import { LoginPopUp } from '../Login'
+import { SidebarMobile } from '../shared';
 
 const Navbar = () => {
     const [isLoginOpen, setIsLoginOpen] = useState(false)
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
+    const openLogin = () => {
+        setIsSidebarOpen(false)
+        setIsLoginOpen(true)
+    }
+
     return (
         <div className='flex items-center justify-between bg-white xl:mx-20 mx-10 p-5 rounded-b-xl shadow'>
             <div>
@@ -90,12 +98,23 @@ const Navbar = () => {
             </div>
 
             <div className='lg:hidden block cursor-pointer'>
-                <FiMenu size={30} />
+                <FiMenu size={30} onClick={() => setIsSidebarOpen(true)} />
             </div>
 
 
             {isLoginOpen && (
                 <LoginPopUp setIsOpen={setIsLoginOpen} />
+            )}
+
+            {isSidebarOpen && (
+                <SidebarMobile openLogin={openLogin} />
+            )}
+
+            {isSidebarOpen && (
+                <div
+                    className="fixed inset-0 bg-gray-800 bg-opacity-50 transition-opacity"
+                    onClick={() => setIsSidebarOpen(false)}
+                ></div>
             )}
         </div>
     )

@@ -2,11 +2,9 @@ import bannerBg from '../../assets/bg-banner.jpg';
 import carBanner from '../../assets/car-banner.png'
 import offer from '../../assets/offer.png'
 import arrow from '../../assets/icon.png'
-// import { FaPlay } from "react-icons/fa";
-import { FaXmark } from "react-icons/fa6";
+import { FaPlay, FaXmark } from "react-icons/fa6";
 import { useState } from 'react';
 import TabsFilters from '../TabFilters/Tabs';
-import { Button } from '../ui/button';
 
 const Banner = () => {
     const [showModal1, setShowModal1] = useState(false)
@@ -27,8 +25,7 @@ const Banner = () => {
 
                 <div className='flex items-center gap-10'>
                     <button className='p-4 px-8 rounded-lg text-white text-lg font-medium bg-red-700 hover:bg-[#0e183e]'>Go To Listing</button>
-                    {/* <button className='p-6 rounded-full py-6 bg-white text-red-700'><FaPlay /></button> */}
-                    <Button>Test</Button>
+                    <button className='p-6 rounded-full py-6 bg-white text-red-700'><FaPlay /></button>
                 </div>
             </div>
 
