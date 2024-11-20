@@ -5,6 +5,8 @@ import popularCar from '../assets/2.jpg'
 import { CarIcon } from '@/icons'
 import porche from '../assets/wg2.jpg'
 
+import { FaCarSide, FaHashtag, FaIdBadge, FaCalendarAlt, FaRoad, FaCogs, FaArrowsAltH, FaTachometerAlt, FaGasPump, FaDoorOpen, FaPalette, FaChair, FaCity } from "react-icons/fa";
+
 export const NavLinks = {
     home: [
         {
@@ -389,4 +391,23 @@ export const footerLinks = [
             { name: "Mail Me a Brochure", url: "/" },
         ],
     },
+];
+
+
+export const carOverview = [
+    { label: "Condition", value: "New", icon: <FaCarSide /> },
+    { label: "Stock Number", value: "N8990", icon: <FaHashtag /> },
+    { label: "VIN Number", value: "84HKFI792KJDC", icon: <FaIdBadge /> },
+    { label: "Year", value: "2023", icon: <FaCalendarAlt /> },
+    { label: "Mileage", value: "28,000 miles", icon: <FaRoad /> },
+    { label: "Transmission", value: "Automatic", icon: <FaCogs /> },
+    { label: "Engine Size", value: "4.8L", icon: <FaTachometerAlt /> },
+    { label: "Driver Type", value: "2WD", icon: <FaArrowsAltH /> },
+    { label: "Cylinders", value: "6", icon: <FaCogs /> },
+    { label: "Fuel Type", value: "Petrol", icon: <FaGasPump /> },
+    { label: "Doors", value: "4", icon: <FaDoorOpen /> },
+    { label: "Color", value: "Black", icon: <FaPalette /> },
+    { label: "Seats", value: "5", icon: <FaChair /> },
+    { label: "City MPG", value: "18", icon: <FaCity /> },
+    { label: "Highway MPG", value: "28", icon: <FaCity /> },
 ];
