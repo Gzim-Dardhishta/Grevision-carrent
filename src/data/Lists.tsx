@@ -4,6 +4,7 @@ import carImg from '../assets/c5.png'
 import popularCar from '../assets/2.jpg'
 import { CarIcon } from '@/icons'
 import porche from '../assets/wg2.jpg'
+import car2 from '../assets/rivew-custom.jpg'
 
 import { FaCarSide, FaHashtag, FaIdBadge, FaCalendarAlt, FaRoad, FaCogs, FaArrowsAltH, FaTachometerAlt, FaGasPump, FaDoorOpen, FaPalette, FaChair, FaCity } from "react-icons/fa";
 
@@ -410,4 +411,143 @@ export const carOverview = [
     { label: "Seats", value: "5", icon: <FaChair /> },
     { label: "City MPG", value: "18", icon: <FaCity /> },
     { label: "Highway MPG", value: "28", icon: <FaCity /> },
+];
+
+
+export const features = [
+    {
+        category: "Safety",
+        items: ["A/C: Front", "Central locking", "Leather", "Sports package", "Navigation system"],
+    },
+    {
+        category: "Exterior",
+        items: ["Front fog light", "Rain sensing wipe", "Rear Spoilers", "Sun roof", "Navigation system"],
+    },
+    {
+        category: "Interior",
+        items: ["A/C: Front", "Child safety locks", "Leather", "Driver air bags", "Navigation system"],
+    },
+    {
+        category: "Convenience",
+        items: ["Power steering", "Vanity mirror", "Trunk Light"],
+    },
+];
+
+
+
+export const reviews = [
+    {
+        id: 1,
+        name: "Rohan De Spond",
+        date: "25 Jan 2021",
+        title: "very awesome & Comfort",
+        rating: 5.0,
+        comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur have is covered many vulputate vestibulum Phasellus rhoncus, dolor eget viverra pretium dolor tellus aliquet nunc, vitae ultricies erat elit eu lacus. Vestibul non justo consectetur, cursus ante, tincidunt sapien. Nulla quis.",
+        images: [
+            car2,
+            car2,
+        ]
+    },
+    {
+        id: 2,
+        name: "John Doe",
+        date: "15 Dec 2020",
+        title: "Excellent Performance",
+        rating: 4.8,
+        comment:
+            "Curabitur sollicitudin mauris nec massa pulvinar, sed interdum velit pharetra. Phasellus aliquam ante ut elit dapibus interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut vel justo a elit gravida auctor nec id mi.",
+        images: [
+            car2,
+            car2,
+        ]
+    },
+];
+
+
+export const bestcars = [
+    {
+        id: 1,
+        image: car2,
+        title: "Mercedez benz - c class",
+        rating: 5,
+        reviews: 2,
+        fuel: "Petrol",
+        distance: "90 k.m",
+        transmission: "Auto",
+        price: 399,
+        oldPrice: 489,
+    },
+    {
+        id: 2,
+        image: car2,
+        title: "Mercedez benz - c class",
+        rating: 5,
+        reviews: 2,
+        fuel: "Petrol",
+        distance: "90 k.m",
+        transmission: "Auto",
+        price: 399,
+        oldPrice: 489,
+    },
+    {
+        id: 3,
+        image: car2,
+        title: "Mercedez benz - c class",
+        rating: 5,
+        reviews: 2,
+        fuel: "Petrol",
+        distance: "90 k.m",
+        transmission: "Auto",
+        price: 399,
+        oldPrice: 489,
+    },
+    {
+        id: 4,
+        image: car2,
+        title: "Mercedez benz - c class",
+        rating: 5,
+        reviews: 2,
+        fuel: "Petrol",
+        distance: "90 k.m",
+        transmission: "Auto",
+        price: 399,
+        oldPrice: 489,
+    },
+    {
+        id: 5,
+        image: car2,
+        title: "Mercedez benz - c class",
+        rating: 5,
+        reviews: 2,
+        fuel: "Petrol",
+        distance: "90 k.m",
+        transmission: "Auto",
+        price: 399,
+        oldPrice: 489,
+    },
+    {
+        id: 6,
+        image: car2,
+        title: "Mercedez benz - c class",
+        rating: 5,
+        reviews: 2,
+        fuel: "Petrol",
+        distance: "90 k.m",
+        transmission: "Auto",
+        price: 399,
+        oldPrice: 489,
+    },
+    {
+        id: 7,
+        image: car2,
+        title: "Mercedez benz - c class",
+        rating: 5,
+        reviews: 2,
+        fuel: "Petrol",
+        distance: "90 k.m",
+        transmission: "Auto",
+        price: 399,
+        oldPrice: 489,
+    },
 ];

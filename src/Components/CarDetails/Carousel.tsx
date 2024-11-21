@@ -34,12 +34,12 @@ const Carousel = () => {
     }, [currentImage]);
 
     return (
-        <div className="max-w-4xl mx-auto">
+        <div className="w-full">
             <div className="relative">
                 <img
                     src={images[currentImage]}
                     alt={`Slide ${currentImage + 1}`}
-                    className="w-full h-96 object-cover rounded-lg"
+                    className="w-full h-[600px] object-cover rounded-lg"
                 />
                 <button
                     className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white  p-6 rounded-full"
