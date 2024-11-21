@@ -4,7 +4,7 @@ const CarDescriptions = () => {
     return (
         <div className="space-y-14 mt-14">
 
-            <div className="max-w-4xl mx-auto">
+            <div className=" mx-auto">
                 <h4 className="col-span-2 mb-4 text-2xl font-semibold text-gray-900">
                     <span className="border-l-4 border-red-500 pl-2">Description</span>
                 </h4>
@@ -21,7 +21,7 @@ const CarDescriptions = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 gap-6 mx-auto">
                 <h2 className="col-span-2 text-2xl font-semibold text-gray-900">
                     <span className="border-l-4 border-red-500 pl-2">Car Overview</span>
                 </h2>
