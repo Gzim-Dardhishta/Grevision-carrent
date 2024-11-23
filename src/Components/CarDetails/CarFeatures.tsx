@@ -4,11 +4,11 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const CarFeatures = () => {
     return (
-        <div className='w-full'>
+        <div className='w-full mt-14'>
             <h4 className="col-span-2 mb-4 text-2xl font-semibold text-gray-900">
                 <span className="border-l-4 border-red-500 pl-2">Features</span>
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
                 {features.map((feature) => (
                     <div key={feature.category} className="space-y-3">
                         <h3 className="text-lg font-semibold text-gray-900">{feature.category}</h3>
@@ -28,7 +28,7 @@ const CarFeatures = () => {
             </div>
 
 
-            <div>
+            <div className='mt-10'>
                 <h4 className="col-span-2 mb-4 text-2xl font-semibold text-gray-900">
                     <span className="border-l-4 border-red-500 pl-2">Features</span>
                 </h4>

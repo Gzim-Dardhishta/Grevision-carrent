@@ -7,7 +7,6 @@ import { TbEdit } from "react-icons/tb";
 const ContactForm = () => {
     return (
         <div className="bg-gray-100 p-6 w-full mt-8 rounded-lg">
-            {/* Profile Section */}
             <div className="flex items-center mb-4">
                 <img
                     src="https://via.placeholder.com/60"
@@ -21,7 +20,6 @@ const ContactForm = () => {
                 </div>
             </div>
 
-            {/* Form Section */}
             <form className="space-y-4">
                 <div className="relative">
                     <input
