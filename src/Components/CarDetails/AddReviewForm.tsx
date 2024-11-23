@@ -6,18 +6,18 @@ import { Button } from "../ui/button";
 
 const AddReviewForm = () => {
     return (
-        <div className="w-full mt-16 mb-12 bg-gray-100 p-6 rounded-md shadow-md">
+        <div className="w-full mt-16 mb-12 bg-gray-100 p-6 sm:px-6 px-4 rounded-md shadow-md">
             {/* Header */}
             <h2 className="text-lg font-bold text-gray-800 border-l-4 border-red-500 pl-3 mb-6">
                 Customer Review
             </h2>
 
             {/* Ratings Summary */}
-            <div className="grid grid-cols-4 gap-4 mb-6">
+            <div className="flex flex-wrap gap-4 mb-6">
                 {["Comfort", "Performance", "Interior Design", "Speed"].map((category, index) => (
-                    <div key={index} className="text-center">
+                    <div key={index} className="">
                         <p className="text-sm font-medium text-gray-800">{category}</p>
-                        <div className="text-yellow-500">{"⭐".repeat(5)}</div>
+                        <div className="text-yellow-500 text-xs">{"⭐".repeat(5)}</div>
                     </div>
                 ))}
             </div>

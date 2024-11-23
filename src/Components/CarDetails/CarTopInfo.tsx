@@ -4,9 +4,9 @@ import { LuRepeat } from "react-icons/lu";
 
 const CarTopInfo = () => {
     return (
-        <div className="w-full p-4 mt-16 border-b border-gray-200">
+        <div className="w-full pb-4 mt-16 border-b border-gray-200">
             {/* Top Info Row */}
-            <div className="flex justify-between">
+            <div className="flex md:flex-row flex-col justify-between">
                 <div className="space-y-6">
                     <div className="flex items-center gap-6">
                         <span className="bg-red-700 text-white text-sm px-3 rounded-full">-34%</span>

@@ -15,11 +15,11 @@ const Details = () => {
     return (
         <div>
             <Header />
-            <div className='px-10 lg:px-20'>
+            <div className='max-w-5xl mx-auto lg:px-0 px-8'>
                 <CarTopInfo />
                 <Carousel />
-                <div className='flex gap-10'>
-                    <div className='w-4/6'>
+                <div className='flex md:flex-row flex-col lg:gap-10 gap-4'>
+                    <div className='md:w-4/6'>
                         <CarDescriptions />
                         <CarFeatures />
                         <LoanCalculator />

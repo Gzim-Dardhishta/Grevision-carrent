@@ -62,7 +62,7 @@ const CustomerReview = () => {
                 </div>
             </div>
 
-            <div className="w-full space-y-8 p-6">
+            <div className="w-full space-y-8 p-6 sm:px-6 px-0">
                 {reviews.map((review) => (
                     <div
                         key={review.id}
