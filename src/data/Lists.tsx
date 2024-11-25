@@ -6,6 +6,8 @@ import { CarIcon } from '@/icons'
 import porche from '../assets/wg2.jpg'
 import car2 from '../assets/rivew-custom.jpg'
 import { FaTags } from "react-icons/fa";
+import car8 from '../assets/car8.jpg'
+import benz from '../assets/wg5.jpg'
 
 import { FaCarSide, FaHashtag, FaIdBadge, FaCalendarAlt, FaRoad, FaCogs, FaArrowsAltH, FaTachometerAlt, FaGasPump, FaDoorOpen, FaPalette, FaChair, FaCity } from "react-icons/fa";
 
@@ -586,5 +588,69 @@ export const featuresHomePage2 = [
         title: 'Expert Car Service',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         icon: <FaTags />
+    },
+];
+
+
+export const popularMakes = [
+    {
+        id: 1,
+        title: "Chevrolet Suburban 2021 mo",
+        description: "Mini Cooper 3 Similar",
+        price: "$27,000",
+        year: 2023,
+        fuelType: "Petrol",
+        mileage: "90 k.m",
+        transmission: "Auto",
+        imagesCount: 5,
+        featured: true,
+        imageUrl: car8
+    },
+    {
+        id: 2,
+        title: "Toyota Camry 2022",
+        description: "Toyota Avalon Similar",
+        price: "$23,000",
+        year: 2022,
+        fuelType: "Hybrid",
+        mileage: "50 k.m",
+        transmission: "Auto",
+        imagesCount: 6,
+        featured: false,
+        imageUrl: car8
+    },
+    {
+        id: 3,
+        title: "Honda Civic 2020",
+        description: "Honda Accord Similar",
+        price: "$19,000",
+        year: 2020,
+        fuelType: "Petrol",
+        mileage: "30 k.m",
+        transmission: "Manual",
+        imagesCount: 4,
+        featured: false,
+        imageUrl: car8
+    }
+];
+
+export const latestNews = [
+    {
+        image: benz,
+        title: "How The Maruti Invicto Is A Lesson In Brand Build...",
+        author: "Mehedii .H",
+        comments: "03",
+    },
+    {
+        image: benz,
+        title: "How The Maruti Invicto Is A Lesson In Brand Build...",
+        author: "Mehedii .H",
+        comments: "03",
+    },
+    {
+        image: benz,
+        title: "How The Maruti Invicto Is A Lesson In Brand Build...",
+        author: "Mehedii .H",
+        comments: "03",
     },
 ];

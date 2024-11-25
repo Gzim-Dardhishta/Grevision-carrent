@@ -1,5 +1,6 @@
 import { Navbar } from '@/Components/Header'
-import { Banner, BestSellingCar, BookingCar, CarInvertory, CarsList, ClientReviews, Features, Vehiclestypes } from '@/Components/HomePage2'
+import { Banner, BestSellerCars, BestSellingCar, BookingCar, CarInvertory, CarsList, ClientReviews, DownloadMobile, Features, LatestNews, PopularMakes, Vehiclestypes } from '@/Components/HomePage2'
+import { Footer } from '@/Components/shared'
 
 const HomePage2 = () => {
     return (
@@ -13,6 +14,11 @@ const HomePage2 = () => {
             <CarsList />
             <CarInvertory />
             <ClientReviews />
+            <BestSellerCars />
+            <PopularMakes />
+            <DownloadMobile />
+            <LatestNews />
+            <Footer />
         </div>
     )
 }

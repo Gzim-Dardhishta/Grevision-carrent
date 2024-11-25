@@ -1,14 +1,15 @@
-// import { Card, CardContent } from '../ui/card'
+
 import { RiDoubleQuotesR } from 'react-icons/ri'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel'
 import { clientReviews } from '@/data/Lists'
 import { BsSymmetryHorizontal } from 'react-icons/bs'
 import client from '../../assets/image-frame.png'
 import frame from '../../assets/frame.png'
+import { Card } from '../ui/card'
 
 const ClientReviews = () => {
     return (
-        <div className='lg:mt-32 md:mt-[50em] mt-[75em] flex md:flex-row flex-col  gap-[5vw] xl:px-20 px-10'>
+        <div className='lg:mt-32 mt-28 flex md:flex-row flex-col  gap-[5vw] xl:px-20 px-10 mb-10'>
             <Carousel className="w-full lg:w-4/6 overflow-hidden">
                 <CarouselContent>
                     {clientReviews.map((c, index) => (
@@ -46,8 +47,8 @@ const ClientReviews = () => {
                 </div>
             </Carousel>
 
-            <div
-                className="relative rounded-xl overflow-hidden w-2/6 flex items-center justify-center bg-cover bg-no-repeat bg-center"
+            <Card
+                className="relative rounded-xl overflow-hidden md:w-2/6 flex items-center justify-center bg-cover bg-no-repeat bg-center"
                 style={{
                     backgroundImage: `url(${frame})`, // Background pattern
                 }}
@@ -64,7 +65,7 @@ const ClientReviews = () => {
                 <div className="absolute -top-5 -left-5 p-4 z-50 rounded-full bg-red-600">
                     <RiDoubleQuotesR size={40} color="white" />
                 </div>
-            </div>
+            </Card>
 
         </div>
     )
