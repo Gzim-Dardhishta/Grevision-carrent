@@ -25,7 +25,7 @@ export default {
       backgroundImage: {
         'parallax': 'url("./src/assets/bg2.8bfe776b.jpg")'
       }
-  	}
+    }
   },
   plugins: [require("tailwindcss-animate"),],
 }

@@ -5,6 +5,7 @@ import popularCar from '../assets/2.jpg'
 import { CarIcon } from '@/icons'
 import porche from '../assets/wg2.jpg'
 import car2 from '../assets/rivew-custom.jpg'
+import { FaTags } from "react-icons/fa";
 
 import { FaCarSide, FaHashtag, FaIdBadge, FaCalendarAlt, FaRoad, FaCogs, FaArrowsAltH, FaTachometerAlt, FaGasPump, FaDoorOpen, FaPalette, FaChair, FaCity } from "react-icons/fa";
 
@@ -553,5 +554,37 @@ export const bestcars = [
         transmission: "Auto",
         price: 399,
         oldPrice: 489,
+    },
+];
+
+
+export const vehicles = [
+    { id: 1, type: 'Minivan', image: popularCar },
+    { id: 2, type: 'Hatchback', image: popularCar },
+    { id: 3, type: 'Sedan', image: popularCar },
+    { id: 4, type: 'Coupe', image: popularCar },
+];
+
+
+export const featuresHomePage2 = [
+    {
+        title: 'Trusted Car Dealership',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        icon: <FaTags />
+    },
+    {
+        title: 'Special Gift Offer',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        icon: <FaTags />
+    },
+    {
+        title: 'Flexible Pricing',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        icon: <FaTags />
+    },
+    {
+        title: 'Expert Car Service',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        icon: <FaTags />
     },
 ];

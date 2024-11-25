@@ -9,11 +9,16 @@ import { Link } from 'react-router-dom'
 import { FiPlusCircle } from "react-icons/fi";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FiMenu } from "react-icons/fi";
-import { useState } from 'react'
+import { FC, useState } from 'react'
 import { LoginPopUp } from '../Login'
 import { SidebarMobile } from '../shared';
 
-const Navbar = () => {
+type NavBarType = {
+    className?: string
+    btnClass?: string
+}
+
+const Navbar: FC<NavBarType> = ({ className, btnClass }) => {
     const [isLoginOpen, setIsLoginOpen] = useState(false)
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
@@ -23,7 +28,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='flex items-center justify-between bg-white xl:mx-20 mx-10 p-5 rounded-b-xl shadow'>
+        <div className={`flex items-center justify-between bg-white p-5 shadow ${className}`}>
             <div>
                 <img src={logo} alt="" className='w-28' />
             </div>
@@ -93,7 +98,7 @@ const Navbar = () => {
                     <div onClick={() => setIsLoginOpen(true)} className='hover:text-red-700 cursor-pointer'>Log In</div>
                 </div>
                 <Link to={'/'}>
-                    <button className='py-4 px-7 hover:bg-red-700 rounded-lg hover:text-white flex items-center gap-2'>Listing yours <FiPlusCircle /></button>
+                    <button className={`py-4 px-7 hover:bg-red-700 rounded-lg hover:text-white flex items-center gap-2 ${btnClass}`}>Listing yours <FiPlusCircle /></button>
                 </Link>
             </div>
 
