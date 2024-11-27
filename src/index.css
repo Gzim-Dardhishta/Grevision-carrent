@@ -6,3 +6,13 @@
     --radius: 0.5rem
   }
 }
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+  .text-fill-transparent {
+    -webkit-text-fill-color: transparent;
+  }
+}

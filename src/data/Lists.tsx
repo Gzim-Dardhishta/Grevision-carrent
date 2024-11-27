@@ -8,6 +8,7 @@ import car2 from '../assets/rivew-custom.jpg'
 import { FaTags } from "react-icons/fa";
 import car8 from '../assets/car8.jpg'
 import benz from '../assets/wg5.jpg'
+import c8 from '../assets/c8.png'
 
 import { FaCarSide, FaHashtag, FaIdBadge, FaCalendarAlt, FaRoad, FaCogs, FaArrowsAltH, FaTachometerAlt, FaGasPump, FaDoorOpen, FaPalette, FaChair, FaCity } from "react-icons/fa";
 
@@ -654,3 +655,31 @@ export const latestNews = [
         comments: "03",
     },
 ];
+
+
+export const exploreCars = [
+    {
+        text: 'Cabriolet',
+        image: c8
+    },
+    {
+        text: 'Cabriolet',
+        image: c8
+    },
+    {
+        text: 'Cabriolet',
+        image: c8
+    },
+    {
+        text: 'Cabriolet',
+        image: c8
+    },
+    {
+        text: 'Cabriolet',
+        image: c8
+    },
+    {
+        text: 'Cabriolet',
+        image: c8
+    }
+]

@@ -23,7 +23,8 @@ export default {
         },
       },
       backgroundImage: {
-        'parallax': 'url("./src/assets/bg2.8bfe776b.jpg")'
+        'parallax': 'url("./src/assets/bg2.8bfe776b.jpg")',
+        'parallax2': 'url("./src/assets/bg4.8174d87b.jpg")'
       }
     }
   },
