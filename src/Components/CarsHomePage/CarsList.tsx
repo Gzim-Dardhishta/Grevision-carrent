@@ -1,9 +1,16 @@
 import { cars } from "@/data/Lists";
-import { useState } from "react";
+import { FC, useState } from "react";
 import CarCard from "./CarCard";
 
+type CarListType = {
+    title: string
+    text?: string
+}
 
-const CarsList = () => {
+const CarsList: FC<CarListType> = ({
+    title,
+    text
+}) => {
     const [selected, setSelected] = useState('All Status');
 
     const tabs = [
@@ -18,9 +25,9 @@ const CarsList = () => {
 
             <div className="mb-10 flex md:flex-row flex-col justify-between md:items-center">
                 <div className="md:mb-0 mb-8">
-                    <h4 className="uppercase text-red-700 underline font-medium text-lg">Trusted Car DeAler Service</h4>
+                    <h4 className="uppercase text-red-700 underline font-medium text-lg">{text}</h4>
 
-                    <h2 className="md:text-5xl text-4xl font-semibold">Explore all Vehicles</h2>
+                    <h2 className="md:text-5xl text-4xl font-semibold">{title}</h2>
                 </div>
 
                 <div className="flex">

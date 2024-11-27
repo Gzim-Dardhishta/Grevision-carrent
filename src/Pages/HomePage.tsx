@@ -19,7 +19,7 @@ const HomePage = () => {
             <Header />
             <Banner />
             <CarsBrands />
-            <CarsList />
+            <CarsList title='Explore all Vehicles' text='Trusted Car DeAler Service' />
             <BrowseCars />
             <PartnerSlider />
             <PopularCarsList />

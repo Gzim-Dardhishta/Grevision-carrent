@@ -5,11 +5,16 @@ import {
     TabsList,
     TabsTrigger,
 } from "../ui/tabs"
+import { FC } from "react"
+
+type TabFilterType = {
+    className?: string
+}
 
 
-const TabsFilters = () => {
+const TabsFilters: FC<TabFilterType> = ({ className }) => {
     return (
-        <div className="md:px-20 px-10 p-4 rounded-md absolute md:bottom-[-5em] bottom-[-18em] left-0 w-full">
+        <div className={`md:px-20 px-10 p-4 rounded-md absolute md:bottom-[-5em] bottom-[-18em] left-0 w-full ${className}`}>
             <Tabs defaultValue="all-cars" className="w-full">
                 <TabsList className="grid lg:w-1/4 grid-cols-3">
                     <TabsTrigger value="all-cars">All Cars</TabsTrigger>
