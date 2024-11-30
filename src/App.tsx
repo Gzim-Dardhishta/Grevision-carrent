@@ -1,7 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { HomePage, CarDetailsPage, HomePage2, HomePage3 } from "./Pages"
-import HomePage4 from "./Pages/HomePage4"
-import HomePage5 from "./Pages/HomePage5"
+import { HomePage, CarDetailsPage, HomePage2, HomePage3, HomePage4, HomePage5, HomePage6 } from "./Pages"
 
 function App() {
 
@@ -14,6 +12,7 @@ function App() {
         <Route path="/home3" element={<HomePage3 />} />
         <Route path="/home4" element={<HomePage4 />} />
         <Route path="/home5" element={<HomePage5 />} />
+        <Route path="/home6" element={<HomePage6 />} />
       </Routes>
     </div>
   )

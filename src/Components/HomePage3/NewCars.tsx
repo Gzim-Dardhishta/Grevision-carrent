@@ -11,7 +11,7 @@ const NewCars = () => {
             </div>
 
             <Carousel>
-                <CarouselContent>
+                <CarouselContent className="py-4">
                     {cars.map((car) => (
                         <CarouselItem className="md:basis-1/2 lg:basis-1/4">
                             <CarCard key={car.id} car={car} />
