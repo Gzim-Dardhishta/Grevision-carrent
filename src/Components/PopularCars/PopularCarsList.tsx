@@ -14,21 +14,23 @@ const PopularCarsList = () => {
 
     return (
         <div className=" lg:px-20 px-10">
-            <div className="text-center py-16 bg-white">
-                <div className="text-red-600 font-medium uppercase text-sm tracking-wider">
-                    Trusted Car Dealer Service
-                </div>
+            <div className="flex lg:flex-row flex-col justify-between items-center py-16 bg-white">
+                <div>
+                    <div className="text-red-600 font-medium uppercase text-sm tracking-wider">
+                        Trusted Car Dealer Service
+                    </div>
 
-                <h1 className="text-4xl font-bold text-gray-900 mt-2">
-                    Popular Makes By
-                </h1>
+                    <h1 className="text-4xl font-bold text-gray-900 mt-2">
+                        Popular Makes By
+                    </h1>
+                </div>
 
                 <div className="flex flex-wrap justify-center mt-6 gap-4">
                     {carMakes.map((make, index) => (
                         <button
                             key={index}
                             onClick={() => setActiveButton(make)}
-                            className={`px-6 py-2 rounded-lg shadow-sm border ${activeButton === make
+                            className={`px-5 text-sm py-2 rounded-md shadow-sm border ${activeButton === make
                                 ? "bg-red-700 text-white"
                                 : "bg-white text-gray-800 border-gray-300 hover:bg-gray-100"
                                 }`}

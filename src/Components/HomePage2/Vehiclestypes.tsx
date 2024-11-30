@@ -6,7 +6,7 @@ const Vehiclestypes = () => {
         <div className="mt-32">
             <div className="bg-gray-100 pt-20 pb-64">
                 <div className='border-b-2 text-lg w-fit border-dotted border-red-700 mx-auto'>20% OFF FOR ONLINE BOOKING</div>
-                <div className="text-5xl font-semibold text-center">
+                <div className="text-6xl lg:w-3/5 mx-auto font-semibold text-center">
                     Browse By Your favorite <span className="text-red-700">Vehicles</span>types
                 </div>
             </div>
