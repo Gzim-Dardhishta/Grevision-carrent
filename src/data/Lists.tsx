@@ -683,3 +683,32 @@ export const exploreCars = [
         image: c8
     }
 ]
+
+export const cars6 = [
+    { type: "Sedan", image: car },
+    { type: "SUV", image: car },
+    { type: "Hatchback", image: car },
+    { type: "Hybrid", image: car },
+    { type: "Coupe", image: car },
+];
+
+export const steps = [
+    {
+        number: "1",
+        title: "Register For Free",
+        description:
+            "For 15 years, we raising the standard of used car most innovative and reliable used vehicle program",
+    },
+    {
+        number: "2",
+        title: "Submit Your Cars",
+        description:
+            "For 15 years, we raising the standard of used car most innovative and reliable used vehicle program",
+    },
+    {
+        number: "3",
+        title: "Get Connected",
+        description:
+            "For 15 years, we raising the standard of used car most innovative and reliable used vehicle program",
+    },
+];
