@@ -14,7 +14,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ image, title, author, comments }) => {
     return (
-        <div className="overflow-hidden group">
+        <div className="overflow-hidden group pb-2">
             <div className="relative overflow-hidden z-0">
                 <img
                     src={image}
@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({ image, title, author, comments }) => {
                 </span>
             </div>
 
-            <div className="p-4 w-11/12 mx-auto -mt-10 z-50 bg-white relative shadow-xl">
+            <div className="p-4 w-11/12 mx-auto -mt-10 bg-white relative shadow">
                 <div className="flex items-center text-sm text-gray-500 mb-2">
                     <span className="flex items-center mr-4">
                         <GoPerson className="text-red-700" size={20} />
@@ -54,16 +54,23 @@ const Card: React.FC<CardProps> = ({ image, title, author, comments }) => {
 
 const LatestNews = () => {
     return (
-        <div className=" lg:px-20 px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
-            {latestNews.map((card, index) => (
-                <Card
-                    key={index}
-                    image={card.image}
-                    title={card.title}
-                    author={card.author}
-                    comments={card.comments}
-                />
-            ))}
+        <div className='mt-20 lg:px-20 px-10'>
+            <div className='font-medium w-fit mx-auto text-red-700 border-b border-red-700'>FIND YOUR CAR BY CAR BRAND</div>
+            <div className='text-5xl font-semibold lg:w-1/2 mx-auto text-center mt-3 mb-10'>
+                Latest news & article From The Blog
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {latestNews.map((card, index) => (
+                    <Card
+                        key={index}
+                        image={card.image}
+                        title={card.title}
+                        author={card.author}
+                        comments={card.comments}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

@@ -15,90 +15,28 @@ import { FaCarSide, FaHashtag, FaIdBadge, FaCalendarAlt, FaRoad, FaCogs, FaArrow
 export const NavLinks = {
     home: [
         {
-            text: 'Link 1',
+            text: 'Home Page 1',
             path: '/'
         },
         {
-            text: 'Link 2',
-            path: '/'
+            text: 'Home Page 2',
+            path: '/home2'
         },
         {
-            text: 'Link 3',
-            path: '/'
+            text: 'Home Page 3',
+            path: '/home3'
         },
         {
-            text: 'Link 4',
-            path: '/'
+            text: 'Home Page 4',
+            path: '/home4'
         },
         {
-            text: 'Link 5',
-            path: '/'
-        }
-    ],
-    cars: [
-        {
-            text: 'Link 1',
-            path: '/'
+            text: 'Home Page 5',
+            path: '/home5'
         },
         {
-            text: 'Link 2',
-            path: '/'
-        },
-        {
-            text: 'Link 3',
-            path: '/'
-        },
-        {
-            text: 'Link 4',
-            path: '/'
-        },
-        {
-            text: 'Link 5',
-            path: '/'
-        }
-    ],
-    page: [
-        {
-            text: 'Link 1',
-            path: '/'
-        },
-        {
-            text: 'Link 2',
-            path: '/'
-        },
-        {
-            text: 'Link 3',
-            path: '/'
-        },
-        {
-            text: 'Link 4',
-            path: '/'
-        },
-        {
-            text: 'Link 5',
-            path: '/'
-        }
-    ],
-    news: [
-        {
-            text: 'Link 1',
-            path: '/'
-        },
-        {
-            text: 'Link 2',
-            path: '/'
-        },
-        {
-            text: 'Link 3',
-            path: '/'
-        },
-        {
-            text: 'Link 4',
-            path: '/'
-        },
-        {
-            text: 'Link 5',
-            path: '/'
+            text: 'Home Page 6',
+            path: '/home6'
         }
     ]
 }

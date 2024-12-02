@@ -29,9 +29,9 @@ const Navbar: FC<NavBarType> = ({ className, btnClass }) => {
 
     return (
         <div className={`flex items-center justify-between bg-white p-5 shadow ${className}`}>
-            <div>
+            <Link to={'/'}>
                 <img src={logo} alt="" className='w-28' />
-            </div>
+            </Link>
 
             <div className='lg:flex hidden items-center lg:gap-8 gap-5'>
                 <HoverCard>
@@ -47,44 +47,20 @@ const Navbar: FC<NavBarType> = ({ className, btnClass }) => {
                     </HoverCardContent>
                 </HoverCard>
 
-                <HoverCard>
-                    <HoverCardTrigger className="flex items-center gap-1 cursor-pointer group relative">
-                        Cars
-                        <RiArrowDownSLine className="group-hover:rotate-180 group-hover:duration-300" />
-                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-                    </HoverCardTrigger>
-                    <HoverCardContent className='flex flex-col gap-3'>
-                        {NavLinks.cars?.map((h) => (
-                            <Link to={h.path} className='hover:text-red-500'>{h.text}</Link>
-                        ))}
-                    </HoverCardContent>
-                </HoverCard>
+                <div className='relative'>
+                    <Link to={'/'}>Cars</Link>
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+                </div>
 
-                <HoverCard>
-                    <HoverCardTrigger className="flex items-center gap-1 cursor-pointer group relative">
-                        Pages
-                        <RiArrowDownSLine className="group-hover:rotate-180 group-hover:duration-300" />
-                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-                    </HoverCardTrigger>
-                    <HoverCardContent className='flex flex-col gap-3'>
-                        {NavLinks.page?.map((h) => (
-                            <Link to={h.path} className='hover:text-red-500'>{h.text}</Link>
-                        ))}
-                    </HoverCardContent>
-                </HoverCard>
+                <div className='relative'>
+                    <Link to={'/'}>Pages</Link>
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+                </div>
 
-                <HoverCard>
-                    <HoverCardTrigger className="flex items-center gap-1 cursor-pointer group relative">
-                        News
-                        <RiArrowDownSLine className="group-hover:rotate-180 group-hover:duration-300" />
-                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-                    </HoverCardTrigger>
-                    <HoverCardContent className='flex flex-col gap-3'>
-                        {NavLinks.news?.map((h) => (
-                            <Link to={h.path} className='hover:text-red-500'>{h.text}</Link>
-                        ))}
-                    </HoverCardContent>
-                </HoverCard>
+                <div className='relative'>
+                    <Link to={'/'}>News</Link>
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+                </div>
 
                 <div className='relative'>
                     <Link to={'/'}>Contact Us</Link>
@@ -94,7 +70,7 @@ const Navbar: FC<NavBarType> = ({ className, btnClass }) => {
 
             <div className='lg:flex hidden items-center gap-5'>
                 <div className='flex items-center'>
-                    <Link to={''} className='hover:text-red-700'>Register /  </Link>
+                    <Link to={'/signup'} className='hover:text-red-700'>Register /  </Link>
                     <div onClick={() => setIsLoginOpen(true)} className='hover:text-red-700 cursor-pointer'>Log In</div>
                 </div>
                 <Link to={'/'}>
