@@ -1,4 +1,3 @@
-import Header from './Header'
 import CarTopInfo from './CarTopInfo'
 import Carousel from './Carousel'
 import CarDescriptions from './CarDescriptions'
@@ -10,11 +9,12 @@ import BestCarsCarousel from './BestCarsCarousel'
 import { Footer } from '../shared'
 import OtherLinks from './OtherLinks'
 import ContactForm from './ContactForm'
+import { Navbar } from '../Header'
 
 const Details = () => {
     return (
         <div>
-            <Header />
+            <Navbar className='w-screen xl:mx-0 mx-0 xl:px-20 px-8 rounded-b-none shadow-none fixed top-0 left-0 z-50' btnClass='bg-black text-white' />
             <div className='max-w-5xl mx-auto lg:px-0 px-8'>
                 <CarTopInfo />
                 <Carousel />
