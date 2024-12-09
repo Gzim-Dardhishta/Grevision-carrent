@@ -2,7 +2,7 @@ import car from '../../assets/car3.png'
 
 const BestSellingCar = () => {
     return (
-        <div className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white rounded-lg overflow-hidden lg:mx-20 mx-10 mt-32">
+        <div className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white rounded-lg overflow-hidden max-w-7xl xl:mx-auto mx-5 mt-32">
             <div className="grid md:grid-cols-2 grid-cols-1 items-center px-10 py-10 lg:px-20">
                 <div>
                     <div className="text-red-700 font-semibold mb-2">

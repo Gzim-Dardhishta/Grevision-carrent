@@ -2,7 +2,7 @@ import CarsList from './CarsList'
 
 const BusinessCars = () => {
     return (
-        <div className='lg:px-20 px-10'>
+        <div className='max-w-7xl xl:px-0 px-5 mx-auto'>
             <CarsList />
         </div>
     )

@@ -5,7 +5,7 @@ import SignUpPage from "./Pages/SignUpPage"
 function App() {
 
   return (
-    <div>
+    <div className="app">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/car-details" element={<CarDetailsPage />} />

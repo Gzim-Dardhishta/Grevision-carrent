@@ -6,7 +6,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const OurDealers = () => {
     return (
-        <div className="w-full lg:px-20 px-10 mt-32">
+        <div className="w-full max-w-7xl xl:px-0 mx-5 xl:mx-auto mt-32">
             <div className="flex items-center justify-between mb-10">
                 <div className="text-5xl font-semibold pl-2 border-l-2 border-red-700">Our Dealers</div>
                 <div className="text-lg text-red-700 cursor-pointer uppercase">More Members</div>

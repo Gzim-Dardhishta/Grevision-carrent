@@ -54,7 +54,7 @@ const Card: React.FC<CardProps> = ({ image, title, author, comments }) => {
 
 const LatestNews = () => {
     return (
-        <div className='mt-20 lg:px-20 px-10'>
+        <div className='mt-20 max-w-7xl xl:px-0 mx-5 xl:mx-auto'>
             <div className='font-medium w-fit mx-auto text-red-700 border-b border-red-700'>FIND YOUR CAR BY CAR BRAND</div>
             <div className='text-5xl font-semibold lg:w-1/2 mx-auto text-center mt-3 mb-10'>
                 Latest news & article From The Blog

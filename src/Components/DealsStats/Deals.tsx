@@ -43,7 +43,7 @@ const Deals = () => {
 
     return (
         <div className="h-[550px] bg-parallax bg-center bg-cover bg-fixed lg:px-20 px-10">
-            <div className=" flex lg:flex-row flex-col justify-between items-center pt-24 mb-20">
+            <div className=" flex lg:flex-row flex-col justify-between items-center pt-24 mb-20 max-w-7xl xl:px-0 px-5 mx-auto">
                 <div>
                     <h5 className="text-red-500 text-sm tracking-wide mb-4 border-b border-red-500 font-medium w-fit">FIND YOUR CAR BY CAR BRAND</h5>
                     <h4 className="text-white text-5xl font-semibold">
@@ -55,7 +55,7 @@ const Deals = () => {
                 </p>
             </div>
 
-            <div className="border bg-white p-7 px-10 grid lg:grid-cols-4 md:grid-cols-2 gap-6 mt-12">
+            <div className="border bg-white p-7 grid lg:grid-cols-4 md:grid-cols-2 gap-6 mt-12 max-w-7xl px-15 mx-auto">
                 {statistics.map((stat) => (
                     <CounterCard
                         key={stat.id}

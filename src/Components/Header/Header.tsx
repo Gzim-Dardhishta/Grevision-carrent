@@ -3,9 +3,9 @@ import Navbar from './Navbar'
 
 const Header = () => {
     return (
-        <div className='fixed top-0 right-0 w-screen z-50'>
+        <div className='fixed xl:top-0 xl:-right-2 w-screen z-50 '>
             <MediaHeader />
-            <Navbar className='xl:mx-20 mx-10 rounded-b-xl' />
+            <Navbar className='max-w-7xl xl:mx-auto mx-5 rounded-b-xl' />
         </div>
     )
 }

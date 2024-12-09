@@ -2,7 +2,7 @@ import { featuresHomePage2 } from '@/data/Lists'
 
 const Features = () => {
     return (
-        <div className="px-10 xl:px-20 mt-10 xl:mt-20">
+        <div className="max-w-7xl xl:mx-auto mx-5 mt-10 xl:mt-20">
             <div className='flex md:flex-row flex-col justify-between'>
                 <div className="mb-10">
                     <div className="text-red-700 font-medium uppercase border-b-2 border-dotted border-red-700 w-fit">

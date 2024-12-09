@@ -2,7 +2,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 const TopInfo = () => {
     return (
-        <div className="border p-2 rounded-md absolute top-[-4em] lg:left-20 left-10 lg:right-20 right-10">
+        <div className="border p-2 rounded-md absolute top-[-4em] w-full">
             <div className="flex md:flex-row flex-col items-center justify-between md:space-y-0 space-y-6 bg-red-700 text-white p-6 rounded">
                 <div className="text-2xl font-semibold">
                     Find Local Car & Dealers

@@ -2,7 +2,7 @@ import { CarBrandList } from "../Brands"
 import car from '../../assets/car2.png'
 const BookingCar = () => {
     return (
-        <div className="xl:mt-44 md:mt-48 mt-96 xl:px-20 px-10">
+        <div className="xl:mt-44 md:mt-48 mt-96 max-w-7xl xl:mx-auto mx-5">
             <div className="flex md:flex-row flex-col justify-between items-center">
                 <div className="md:w-2/5 md:pb-0 pb-10">
                     <div className='border-b-2 text-lg border-dotted border-red-700 w-fit'>20% OFF FOR ONLINE BOOKING</div>

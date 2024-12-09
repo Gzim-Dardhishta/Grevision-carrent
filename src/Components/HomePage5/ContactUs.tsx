@@ -2,7 +2,7 @@ import { Button } from '../ui/button'
 
 const ContactUs = () => {
     return (
-        <div className='flex md:flex-row flex-col gap-10 lg:px-20 px-10 my-16'>
+        <div className='flex md:flex-row flex-col gap-10 max-w-7xl xl:px-0 mx-5 xl:mx-auto my-16'>
             <div className="md:w-1/3 w-full">
                 <div className="bg-white rounded-lg shadow-xl p-10 py-12 w-full">
                     <h2 className="text-4xl font-medium text-gray-800 mb-2">Contact Us Today</h2>

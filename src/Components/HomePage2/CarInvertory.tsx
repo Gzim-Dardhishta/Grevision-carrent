@@ -5,7 +5,7 @@ import bg from '../../assets/ellips.png'
 
 const CarInvertory = () => {
     return (
-        <div className='flex lg:flex-row flex-col items-center xl:gap-20 gap-16 xl:px-20 px-10 mt-28'>
+        <div className='flex lg:flex-row flex-col items-center xl:gap-20 gap-16 max-w-7xl mx-auto xl:px-0 px-5 mt-28'>
 
             <Card className='text-white flex items-center justify-between sm:pr-28 py-16 sm:pb-12 pb-52 relative lg:w-1/2 w-full group bg-black rounded-none'>
                 <CardContent className='sm:max-w-80 w-full'>

@@ -15,7 +15,7 @@ import { Footer } from '@/Components/shared'
 
 const HomePage = () => {
     return (
-        <div className=' relative'>
+        <div className='relative'>
             <Header />
             <Banner />
             <CarsBrands />

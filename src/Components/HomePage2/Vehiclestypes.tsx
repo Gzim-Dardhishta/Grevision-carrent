@@ -11,7 +11,7 @@ const Vehiclestypes = () => {
                 </div>
             </div>
 
-            <div className="grid md:grid-flow-col md:grid-cols-3 grid-cols-1 md:grid-rows-2 gap-4 p-6 w-full lg:px-20 px-10 -mt-48">
+            <div className="grid md:grid-flow-col md:grid-cols-3 grid-cols-1 md:grid-rows-2 gap-4 p-6 w-full max-w-7xl xl:mx-auto xl:px-0 px-5 -mt-48">
                 {vehicles.map((vehicle, index) => (
                     <div
                         key={vehicle.id}
@@ -35,9 +35,6 @@ const Vehiclestypes = () => {
                     </div>
                 ))}
             </div>
-
-
-
         </div>
     )
 }

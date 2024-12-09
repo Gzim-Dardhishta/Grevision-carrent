@@ -9,7 +9,7 @@ import { Card } from '../ui/card'
 
 const ClientReviews = () => {
     return (
-        <div className='lg:mt-32 mt-28 flex md:flex-row flex-col  gap-[5vw] xl:px-20 px-10 mb-10'>
+        <div className='lg:mt-32 mt-28 flex md:flex-row flex-col  gap-[5vw] max-w-7xl xl:px-0 px-5 mx-auto mb-10'>
             <Carousel className="w-full lg:w-4/6 overflow-hidden">
                 <CarouselContent>
                     {clientReviews.map((c, index) => (
