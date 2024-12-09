@@ -9,7 +9,7 @@ import { Card } from '../ui/card'
 
 const ClientReviews = () => {
     return (
-        <div className='lg:mt-32 mt-28 flex md:flex-row flex-col  gap-[5vw] xl:px-20 px-10 mb-10'>
+        <div className='lg:mt-32 mt-28 flex md:flex-row flex-col  gap-[5vw] max-w-7xl xl:px-0 px-5 mx-auto mb-10'>
             <Carousel className="w-full lg:w-4/6 overflow-hidden">
                 <CarouselContent>
                     {clientReviews.map((c, index) => (
@@ -50,10 +50,9 @@ const ClientReviews = () => {
             <Card
                 className="relative rounded-xl overflow-hidden md:w-2/6 flex items-center justify-center bg-cover bg-no-repeat bg-center"
                 style={{
-                    backgroundImage: `url(${frame})`, // Background pattern
+                    backgroundImage: `url(${frame})`,
                 }}
             >
-                {/* Client Image */}
                 <div className="rounded-full bg-white p-2 shadow-lg">
                     <img
                         src={client}
@@ -62,7 +61,7 @@ const ClientReviews = () => {
                     />
                 </div>
 
-                <div className="absolute -top-5 -left-5 p-4 z-50 rounded-full bg-red-600">
+                <div className="absolute -top-5 -left-5 p-4 rounded-full bg-red-600">
                     <RiDoubleQuotesR size={40} color="white" />
                 </div>
             </Card>

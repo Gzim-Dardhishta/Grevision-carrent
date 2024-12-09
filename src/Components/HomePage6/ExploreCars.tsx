@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ExploreCars = () => {
     return (
-        <div className="lg:px-20 px-10 mx-auto mt-40">
+        <div className="max-w-7xl mx-5 xl:mx-auto mt-40">
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-5xl font-medium border-l-2 border-red-700 pl-2">Explore All Cars</h2>
                 <Link to="#" className="text-red-600 font-semibold hover:underline">

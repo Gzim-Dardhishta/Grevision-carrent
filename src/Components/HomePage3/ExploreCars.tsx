@@ -2,7 +2,7 @@ import { exploreCars } from "@/data/Lists"
 
 const ExploreCars = () => {
     return (
-        <div className="xl:px-20 px-5 md:mt-36 mt-56">
+        <div className="max-w-7xl xl:px-0 mx-5 xl:mx-auto md:mt-36 mt-56">
             <div className="flex items-center justify-between">
                 <div className="text-5xl font-semibold pl-2 border-l border-red-700">Explore Our cars</div>
                 <div className="text-lg text-red-700 cursor-pointer">VIEW MORE</div>

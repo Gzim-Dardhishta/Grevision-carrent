@@ -18,7 +18,10 @@ const Banner = () => {
                 <Button className='px-10 py-6 bg-red-700 text-lg'>Find a Car</Button>
             </div>
 
-            <TabsFilters />
+            <div className="absolute bottom-32 xl:right-80 xl:left-80 md:right-32 md:left-32 right-5 left-5">
+                <TabsFilters className='' />
+            </div>
+
         </div>
     )
 }

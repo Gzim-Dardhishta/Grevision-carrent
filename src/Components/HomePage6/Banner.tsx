@@ -30,7 +30,9 @@ const Banner = () => {
                 </div>
             </div>
 
-            <TabsFilters className='top-[45em]' />
+            <div className="absolute bottom-32 xl:right-80 xl:left-80 md:right-32 md:left-32 right-5 left-5">
+                <TabsFilters className='' />
+            </div>
         </div>
     )
 }

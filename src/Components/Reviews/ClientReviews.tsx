@@ -17,7 +17,7 @@ import client from '../../assets/tes1.jpg'
 
 const ClientReviews = () => {
     return (
-        <div className='lg:mt-32 md:mt-[50em] mt-[75em] flex md:flex-row flex-col  gap-[5vw] xl:px-36 px-10'>
+        <div className='lg:mt-32 md:mt-[50em] mt-[75em] flex md:flex-row flex-col  gap-[5vw] max-w-7xl xl:px-0 px-5 mx-auto'>
 
             <Card className="rounded-none">
                 <CardContent className="flex aspect-square items-center justify-center md:w-80 w-full p-1 relative">

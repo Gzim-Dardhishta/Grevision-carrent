@@ -10,7 +10,7 @@ const PopularMakes = () => {
     const carMakes = ["Cadillac", "Audi", "Bmw", "Mercedez", "Haundai"];
 
     return (
-        <div className='lg:px-20 px-10 mt-24'>
+        <div className='max-w-7xl xl:px-0 px-5 mx-auto mt-24'>
 
             <div className="flex lg:flex-row flex-col justify-between items-center text-center bg-white lg:mb-0 mb-12">
 

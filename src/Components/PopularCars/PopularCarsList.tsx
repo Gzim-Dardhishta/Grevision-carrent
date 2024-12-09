@@ -13,7 +13,7 @@ const PopularCarsList = () => {
     const carMakes = ["Cadillac", "Audi", "Bmw", "Mercedez", "Haundai"];
 
     return (
-        <div className=" lg:px-20 px-10">
+        <div className="max-w-7xl xl:px-0 px-5 mx-auto">
             <div className="flex lg:flex-row flex-col justify-between items-center py-16 bg-white">
                 <div>
                     <div className="text-red-600 font-medium uppercase text-sm tracking-wider">

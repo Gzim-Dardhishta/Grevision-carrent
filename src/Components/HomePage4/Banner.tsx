@@ -19,7 +19,7 @@ const Banner = () => {
                 }}
             ></div>
 
-            <div className="relative z-10 flex md:flex-row flex-col md:gap-0 gap-20 items-center justify-between w-full">
+            <div className="relative z-10 flex md:flex-row flex-col md:gap-0 gap-20 items-center justify-between w-full max-w-7xl xl:px-0 mx-5 xl:mx-auto">
                 <div className='w-full md:text-left text-center'>
                     <div>
                         <div className="text-lg font-medium uppercase border-b-2 w-fit md:mx-0 mx-auto border-gray-400 text-white">

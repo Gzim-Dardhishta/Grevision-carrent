@@ -4,6 +4,7 @@ import { FiCamera } from 'react-icons/fi';
 import { AiOutlineArrowRight, AiOutlineHeart } from 'react-icons/ai';
 import { GrSync } from "react-icons/gr";
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 
 export interface Car {
     id: number;
@@ -43,17 +44,19 @@ const CarCard: FC<CarCardProps> = ({ car }) => {
                 </div>
             </div>
 
-            <img
-                src={car.imageUrl}
-                alt={car.title}
-                className="w-full h-72 object-cover"
-            />
+            <Link to={'/car-details'}>
+                <img
+                    src={car.imageUrl}
+                    alt={car.title}
+                    className="w-full h-72 object-cover"
+                />
+            </Link>
 
             <div className="p-6">
                 <p className="text-red-600 text-sm font-normal mb-1">
                     {car.description}
                 </p>
-                <h2 className="text-xl font-semibold my-2">{car.title}</h2>
+                <Link to={'/car-details'} className="text-xl font-semibold my-2">{car.title}</Link>
                 <div className="text-red-600 text-xlg font-semibold">{car.price}</div>
 
                 <div className="flex justify-between items-center mt-4 text-gray-600">
@@ -82,9 +85,9 @@ const CarCard: FC<CarCardProps> = ({ car }) => {
             </div>
 
             <div className="mx-6 py-4 border-t flex justify-between items-center text-sm text-gray-600">
-                <button className="flex items-center text-gray-700 hover:text-red-700 font-medium">
+                <Link to={'/car-details'} className="flex items-center text-gray-700 hover:text-red-700 font-medium">
                     VIEW DETAILS <AiOutlineArrowRight className="ml-1" />
-                </button>
+                </Link>
                 <div className="flex space-x-4 text-gray-500">
                     <div className='p-3 rounded bg-gray-200 cursor-pointer'>
                         <GrSync className="w-5 h-5 hover:text-red-600" />

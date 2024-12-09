@@ -4,7 +4,7 @@ import c1 from '../../assets/c1.png'
 import { FaArrowRight } from "react-icons/fa6";
 const CarCards = () => {
     return (
-        <div className='flex lg:flex-row flex-col items-center xl:gap-20 gap-16 xl:px-20 px-10'>
+        <div className='flex lg:flex-row flex-col items-center xl:gap-20 gap-16 max-w-7xl xl:px-0 px-5 mx-auto'>
 
             <Card className='text-white flex items-center justify-between sm:pr-28 py-12 sm:pb-12 pb-52 relative lg:w-1/2 w-full group bg-center bg-cover' style={{ backgroundImage: `url('${bg}')`, backgroundRepeat: 'no-repeat' }}>
                 <CardContent className='sm:max-w-80 w-full'>
