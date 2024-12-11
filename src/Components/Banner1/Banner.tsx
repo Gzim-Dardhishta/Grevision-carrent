@@ -7,7 +7,8 @@ import { useState } from 'react';
 import TabsFilters from '../TabFilters/Tabs';
 
 const Banner = () => {
-    const [showModal1, setShowModal1] = useState(false)
+    const [showModal1, setShowModal1] = useState(false);
+
     return (
         <div
             className="pt-56 pb-32 h-fit bg-cover bg-center w-full relative"
@@ -18,7 +19,7 @@ const Banner = () => {
                 <div className='transform rotate-180'>(603) 555-0123</div>
             </div>
 
-            <div className="max-w-7xl xl:mx-auto mx-5 flex lg:flex-row flex-col items-center justify-end relative">
+            <div className="max-w-7xl xl:mx-auto mx-5 flex lg:flex-row flex-col items-center justify-end relative overflow-hidden">
 
                 <div>
                     <h4 className='uppercase lg:text-xl text-lg text-slate-50 border-b-4 border-gray-400 w-fit'>Trusted Dealer, Rental</h4>
@@ -32,7 +33,7 @@ const Banner = () => {
                 </div>
 
                 <div className='relative lg:-mr-64'>
-                    <img src={carBanner} alt="Car Banner" className='' />
+                    <img src={carBanner} alt="Car Banner" className='w-4/5' />
 
                     <div className='absolute top-0 w-36 h-36 bg-contain bg-no-repeat bg-center'
                         style={{ backgroundImage: `url(${offer})` }}>
@@ -58,9 +59,11 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div className='overflow-hidden'>
-                    <TabsFilters />
+            <div className="relative">
+                <div className="absolute bottom-5 xl:right-80 xl:left-80 md:right-32 md:left-32 right-5 left-5 z-10">
+                    <TabsFilters className='' />
                 </div>
             </div>
         </div>
