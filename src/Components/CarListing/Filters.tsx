@@ -1,8 +1,8 @@
-import { makes, models } from "@/data/Lists"
+
 import { Slider } from "@mui/material"
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectLabel, SelectItem } from "@radix-ui/react-select"
 import Box from '@mui/material/Box';
 import { useState } from "react"
+import { Input } from "../ui/input";
 
 function valuetext(value: number) {
     return `${value}°C`;
@@ -17,40 +17,17 @@ const Filters = () => {
     };
 
     return (
-        <div className="w-full">
-            <div>
-                <Select>
-                    <SelectTrigger className="w-full p-6">
-                        <SelectValue placeholder="Make" />
-                    </SelectTrigger>
-                    <SelectContent>
-                        <SelectGroup>
-                            <SelectLabel>Make</SelectLabel>
-                            {makes.map((m, index) => (
-                                <SelectItem value={m} key={index}>{m}</SelectItem>
-                            ))}
-                        </SelectGroup>
-                    </SelectContent>
-                </Select>
+        <div className="w-full rounded-lg space-y-3">
+
+            <div className="text-xl font-semibold">
+                Search by Filter
             </div>
 
             <div>
-                <Select>
-                    <SelectTrigger className="w-full p-6">
-                        <SelectValue placeholder="Models" />
-                    </SelectTrigger>
-                    <SelectContent>
-                        <SelectGroup>
-                            <SelectLabel>Models</SelectLabel>
-                            {models.map((m, index) => (
-                                <SelectItem value={m} key={index}>{m}</SelectItem>
-                            ))}
-                        </SelectGroup>
-                    </SelectContent>
-                </Select>
+                <Input className="p-6" placeholder='Search here...' />
             </div>
 
-            <div>
+            <div className="mt-10">
                 <Box sx={{ width: '100%' }}>
                     <Slider
                         getAriaLabel={() => 'Price range'}
@@ -63,6 +40,81 @@ const Filters = () => {
                     />
                 </Box>
             </div>
+
+            <div>
+                <select className="w-full p-3 rounded-md border">
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                </select>
+            </div>
+            <div>
+                <select className="w-full p-3 rounded-md border">
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                </select>
+            </div>
+            <div>
+                <select className="w-full p-3 rounded-md border">
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                </select>
+            </div>
+            <div>
+                <select className="w-full p-3 rounded-md border">
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                </select>
+            </div>
+            <div>
+                <select className="w-full p-3 rounded-md border">
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                </select>
+            </div>
+            <div className="grid grid-cols-2 gap-1">
+                <div>
+                    <select className="w-full p-3 rounded-md border">
+                        <option value="">Filter</option>
+                        <option value="">Filter</option>
+                        <option value="">Filter</option>
+                        <option value="">Filter</option>
+                    </select>
+                </div>
+                <div>
+                    <select className="w-full p-3 rounded-md border">
+                        <option value="">Filter</option>
+                        <option value="">Filter</option>
+                        <option value="">Filter</option>
+                        <option value="">Filter</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <select className="w-full p-3 rounded-md border">
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                    <option value="">Filter</option>
+                </select>
+            </div>
+
+            <div>
+                <Input className="p-6" placeholder='Location' value={'Enter your Location'} />
+            </div>
+            <div>
+                <Input className="p-6" placeholder='Engine' value={'Enter Engine Size'} />
+            </div>
+
         </div>
     )
 }
