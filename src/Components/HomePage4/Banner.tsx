@@ -1,4 +1,3 @@
-import { Button } from '../ui/button'
 import bgImage from '../../assets/slide3.jpg'
 import TabFilters from './TabFilters'
 
@@ -30,8 +29,8 @@ const Banner = () => {
                         <div>
                             <div className='text-3xl font-medium text-white my-5'>$ 180.99 / <span className='text-red-700 text-xl'>$2860</span></div>
                         </div>
-                        <Button className='bg-red-700 p-7 text-lg'>Go To Listing</Button>
                     </div>
+                    <button className='bg-red-700 hover:bg-[#1f1e1e] rounded-lg duration-300 ease-in p-4 px-5 text-white text-lg'>Go To Listing</button>
                 </div>
                 <div className="md:w-4/5 lg:w-2/5 w-full">
                     <TabFilters />

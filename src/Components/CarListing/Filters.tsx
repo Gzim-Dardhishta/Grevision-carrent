@@ -2,7 +2,6 @@
 import { Slider } from "@mui/material"
 import Box from '@mui/material/Box';
 import { useState } from "react"
-import { Input } from "../ui/input";
 
 function valuetext(value: number) {
     return `${value}°C`;
@@ -24,7 +23,7 @@ const Filters = () => {
             </div>
 
             <div>
-                <Input className="p-6" placeholder='Search here...' />
+                <input className="p-3 rounded-lg border w-full" placeholder='Search here...' />
             </div>
 
             <div className="mt-10">
@@ -109,10 +108,10 @@ const Filters = () => {
             </div>
 
             <div>
-                <Input className="p-6" placeholder='Location' value={'Enter your Location'} />
+                <input className="p-3 w-full rounded border" placeholder='Location' value={'Enter your Location'} />
             </div>
             <div>
-                <Input className="p-6" placeholder='Engine' value={'Enter Engine Size'} />
+                <input className="p-3 w-full rounded border" placeholder='Engine' value={'Enter Engine Size'} />
             </div>
 
         </div>

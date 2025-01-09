@@ -1,6 +1,5 @@
 import bgImage from '../../assets/bg6.e4ae4275.jpg'
 import TabsFilters from '../TabFilters/Tabs'
-import { Button } from '../ui/button'
 
 const Banner = () => {
     return (
@@ -25,8 +24,8 @@ const Banner = () => {
                 <div className=' mt-6 font-medium'>Unlimited mileage · No hidden fees · Free cancellation</div>
 
                 <div className='flex items-center gap-8 justify-center my-16'>
-                    <Button className='bg-red-700 px-10 text-lg py-7'>View Invertory</Button>
-                    <Button className='bg-red-700 px-10 text-lg py-7'>About Us</Button>
+                    <button className='bg-red-700 px-10 text-lg py-4 rounded-md hover:bg-[#242323] duration-300 ease-in'>View Invertory</button>
+                    <button className='bg-red-700 px-10 text-lg py-4 rounded-md hover:bg-[#242323] duration-300 ease-in'>About Us</button>
                 </div>
             </div>
 

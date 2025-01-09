@@ -1,7 +1,5 @@
 import { FormEvent, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Input } from '../ui/input';
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '../ui/select';
 import { Link } from 'react-router-dom';
 
 const SignupForm = () => {
@@ -66,71 +64,68 @@ const SignupForm = () => {
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Shteti</label>
-                                    <Select>
-                                        <SelectTrigger className="w-full p-5">
-                                            <SelectValue placeholder="..." />
-                                        </SelectTrigger>
-                                        <SelectContent>
-                                            <SelectGroup>
-                                                <SelectLabel>...</SelectLabel>
-                                                <SelectItem value='value'>Value</SelectItem>
-                                            </SelectGroup>
-                                        </SelectContent>
-                                    </Select>
+                                    <div className="w-full">
+                                        <select className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                            <option value="" disabled selected hidden>
+                                                ...
+                                            </option>
+                                            <optgroup label="...">
+                                                <option value="value">Value</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Emri i biznesit</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Aktiviteti i biznensit</label>
-                                    <Select>
-                                        <SelectTrigger className="w-full p-5">
-                                            <SelectValue placeholder="..." />
-                                        </SelectTrigger>
-                                        <SelectContent>
-                                            <SelectGroup>
-                                                <SelectLabel>...</SelectLabel>
-                                                <SelectItem value='value'>Value</SelectItem>
-                                            </SelectGroup>
-                                        </SelectContent>
-                                    </Select>
+                                    <div className="w-full">
+                                        <select className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                            <option value="" disabled selected hidden>
+                                                ...
+                                            </option>
+                                            <optgroup label="...">
+                                                <option value="value">Value</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
                                 </div>
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Numri i biznesit</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Numri i TVSH</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Qyteti</label>
-                                    <Select>
-                                        <SelectTrigger className="w-full p-5">
-                                            <SelectValue placeholder="..." />
-                                        </SelectTrigger>
-                                        <SelectContent>
-                                            <SelectGroup>
-                                                <SelectLabel>...</SelectLabel>
-                                                <SelectItem value='value'>Value</SelectItem>
-                                            </SelectGroup>
-                                        </SelectContent>
-                                    </Select>
+                                    <div className="w-full">
+                                        <select className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                            <option value="" disabled selected hidden>
+                                                ...
+                                            </option>
+                                            <optgroup label="...">
+                                                <option value="value">Value</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
                                 </div>
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Adresa</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Kodi postal</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
                             </div>
 
@@ -161,22 +156,22 @@ const SignupForm = () => {
                             <div className='space-y-4'>
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Numri personal</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Emri</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Mbiemri</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
 
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Telefoni</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
                             </div>
                             <div className="flex justify-center mt-12">
@@ -210,19 +205,19 @@ const SignupForm = () => {
                             <div className='space-y-4'>
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>E-mail</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Konfirmo email-in</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Fjalekalimi</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'>Konfirmo fjalekalimin</label>
-                                    <Input placeholder='' className='col-span-2 py-5' />
+                                    <input placeholder='' className='col-span-2 py-2 rounded-md border' />
                                 </div>
                                 <div className='grid grid-cols-3 items-center gap-4'>
                                     <label className='col-span-1 text-right'></label>

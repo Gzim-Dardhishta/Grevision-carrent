@@ -27,7 +27,7 @@ interface CarCardProps {
 
 const CarCard: FC<CarCardProps> = ({ car }) => {
     return (
-        <div className=" rounded-lg overflow-hidden shadow-lg relative bg-white">
+        <div className="w-full rounded-lg overflow-hidden shadow-lg relative bg-white">
             {car.featured && (
                 <div className="absolute top-2 left-2 bg-red-600 text-white px-4 py-1 rounded">
                     Featured

@@ -1,5 +1,4 @@
 import { vehicles } from "@/data/Lists"
-import { Button } from "../ui/button"
 
 const Vehiclestypes = () => {
     return (
@@ -28,9 +27,9 @@ const Vehiclestypes = () => {
                             className="w-full h-full object-cover group-hover:scale-110 duration-300 ease-out"
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                            <Button className="bg-red-700 p-7 px-10 text-lg">
+                            <button className="bg-red-700 p-5 rounded-lg text-white hover:bg-[#1d1c1c] duration-300 ease-in px-10 text-lg">
                                 {vehicle.type}
-                            </Button>
+                            </button>
                         </div>
                     </div>
                 ))}

@@ -1,5 +1,4 @@
 import { HiMiniXMark } from "react-icons/hi2";
-import { Input } from "../ui/input";
 import { Link } from "react-router-dom";
 
 const LoginForm = ({ setIsOpen }: { setIsOpen: (state: boolean) => void }) => {
@@ -13,12 +12,12 @@ const LoginForm = ({ setIsOpen }: { setIsOpen: (state: boolean) => void }) => {
             <form action="" className="space-y-5">
                 <div>
                     <label htmlFor="" className="font-medium">Account</label>
-                    <Input className="p-6 mt-2" placeholder="Email or user name" />
+                    <input className="p-3 rounded-md w-full border mt-2" placeholder="Email or user name" />
                 </div>
 
                 <div>
                     <label htmlFor="" className="font-medium">Password</label>
-                    <Input className="p-6 mt-2" placeholder="Your password" />
+                    <input className="p-3 rounded-md w-full border mt-2" placeholder="Your password" />
                 </div>
 
                 <div className="text-right">Forgot Password</div>

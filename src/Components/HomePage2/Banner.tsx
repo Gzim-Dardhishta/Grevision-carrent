@@ -1,6 +1,6 @@
 import bgImage from '../../assets/slide2.jpg'
 import TabsFilters from '../TabFilters/Tabs'
-import { Button } from '../ui/button'
+
 const Banner = () => {
     return (
         <div className='relative mt-24'>
@@ -15,7 +15,7 @@ const Banner = () => {
                     Modern <span className='text-red-700'>Classic</span> Incredible
                 </div>
                 <div className='text-lg'>Car is where early adopters and innovation seekers find</div>
-                <Button className='px-10 py-6 bg-red-700 text-lg'>Find a Car</Button>
+                <button className='px-10 py-3 rounded-lg bg-red-700 text-lg hover:bg-[#181717] duration-300 ease-in'>Find a Car</button>
             </div>
 
             <div className="absolute bottom-32 xl:right-80 xl:left-80 md:right-32 md:left-32 right-5 left-5">

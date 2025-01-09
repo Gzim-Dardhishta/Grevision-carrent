@@ -1,4 +1,3 @@
-import { Button } from "../ui/button";
 import { GoPerson } from "react-icons/go";
 import { TfiEmail } from "react-icons/tfi";
 import { MdPhone } from "react-icons/md";
@@ -61,11 +60,11 @@ const ContactForm = () => {
                         <TbEdit />
                     </span>
                 </div>
-                <Button
-                    className="w-full bg-red-700 text-white py-6 rounded hover:bg-red-600"
+                <button
+                    className="w-full bg-red-700 text-white py-3 rounded hover:bg-red-600"
                 >
                     Send Message
-                </Button>
+                </button>
             </form>
         </div>
     );

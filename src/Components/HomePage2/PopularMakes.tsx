@@ -1,6 +1,5 @@
 import { popularMakes } from '@/data/Lists'
 import CarCard from '../CarsHomePage/CarCard'
-import { Button } from '../ui/button'
 import { useState } from 'react';
 
 const PopularMakes = () => {
@@ -44,7 +43,7 @@ const PopularMakes = () => {
             </div>
 
             <div className='w-fit mx-auto my-10'>
-                <Button className='py-7 px-12 md:text-lg bg-red-700'>More Listing</Button>
+                <button className='bg-red-700 p-5 rounded-lg text-white hover:bg-[#1d1c1c] duration-300 ease-in px-10 text-lg'>More Listing</button>
             </div>
         </div>
     )
