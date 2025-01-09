@@ -1,4 +1,3 @@
-import { Button } from '../ui/button'
 
 const ContactUs = () => {
     return (
@@ -44,12 +43,12 @@ const ContactUs = () => {
                             />
                         </div>
                         <div>
-                            <Button
+                            <button
                                 type="submit"
-                                className="w-full bg-red-700 text-white py-6 rounded-none mt-4 transition"
+                                className="w-full bg-red-700 text-white hover:bg-[#1b1b1b] ease-in duration-300 py-4 rounded-none mt-4 transition"
                             >
                                 Send Message
-                            </Button>
+                            </button>
                         </div>
                     </form>
                 </div>

@@ -1,13 +1,4 @@
 import { makes, models } from "@/data/Lists";
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectLabel,
-    SelectTrigger,
-    SelectValue,
-} from "../ui/select";
 import { useState } from "react";
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
@@ -26,36 +17,34 @@ const Filters = () => {
 
     return (
         <div className="grid gap-8 border p-8 bg-white items-center pt-24 rounded-3xl">
-            <div>
-                <Select>
-                    <SelectTrigger className="w-full p-6">
-                        <SelectValue placeholder="Make" />
-                    </SelectTrigger>
-                    <SelectContent>
-                        <SelectGroup>
-                            <SelectLabel>Make</SelectLabel>
-                            {makes.map((m, index) => (
-                                <SelectItem value={m} key={index}>{m}</SelectItem>
-                            ))}
-                        </SelectGroup>
-                    </SelectContent>
-                </Select>
+            <div className="w-full">
+                <div className="relative">
+                    <select className="w-full p-4 bg-white border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <option value="" disabled selected>
+                            Make
+                        </option>
+                        {makes.map((m, index) => (
+                            <option key={index} value={m}>
+                                {m}
+                            </option>
+                        ))}
+                    </select>
+                </div>
             </div>
 
-            <div>
-                <Select>
-                    <SelectTrigger className="w-full p-6">
-                        <SelectValue placeholder="Models" />
-                    </SelectTrigger>
-                    <SelectContent>
-                        <SelectGroup>
-                            <SelectLabel>Models</SelectLabel>
-                            {models.map((m, index) => (
-                                <SelectItem value={m} key={index}>{m}</SelectItem>
-                            ))}
-                        </SelectGroup>
-                    </SelectContent>
-                </Select>
+            <div className="w-full">
+                <div className="relative">
+                    <select className="w-full p-4 bg-white border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <option value="" disabled selected>
+                            Models
+                        </option>
+                        {models.map((m, index) => (
+                            <option key={index} value={m}>
+                                {m}
+                            </option>
+                        ))}
+                    </select>
+                </div>
             </div>
 
             <div>

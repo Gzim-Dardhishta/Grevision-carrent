@@ -1,6 +1,5 @@
 import { steps } from '@/data/Lists'
 import { FaCarSide } from "react-icons/fa";
-import { Button } from '../ui/button';
 import { GoArrowUpRight } from "react-icons/go";
 import image6 from '../../assets/image6.jpg'
 
@@ -43,7 +42,7 @@ const FindSpecialCar = () => {
                                 <div className='text-lg font-medium'>Total Car sold</div>
                             </div>
                         </div>
-                        <Button className='text-lg bg-red-700 px-10 py-7 w-fit'>Search Cars <GoArrowUpRight /></Button>
+                        <button className='text-lg bg-red-700 px-10 py-4 hover:bg-[#242323] ease-in duration-300 w-fit'>Search Cars <GoArrowUpRight /></button>
                     </div>
 
                     <div className='lg:w-1/2 lg:mb-0 mb-10'>

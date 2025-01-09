@@ -1,5 +1,4 @@
 import { makes } from "@/data/Lists"
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../ui/select"
 import { FaList } from "react-icons/fa";
 import { IoGrid } from "react-icons/io5";
 
@@ -10,19 +9,22 @@ const ViewFilters = ({ setViewMode }: { setViewMode: (s: string) => void }) => {
                 <div className="flex items-center justify-between">
                     <div className="text-lg">Showing 1–12 of <span className="text-red-700">54</span> results</div>
                     <div className="w-44">
-                        <Select>
-                            <SelectTrigger className="w-full p-5">
-                                <SelectValue placeholder="Make" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectGroup>
-                                    <SelectLabel>Make</SelectLabel>
-                                    {makes.map((m, index) => (
-                                        <SelectItem value={m} key={index}>{m}</SelectItem>
-                                    ))}
-                                </SelectGroup>
-                            </SelectContent>
-                        </Select>
+                        <div className="w-full">
+                            <select
+                                id="make-select"
+                                className="w-full p-3 py-2 border rounded-md bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                defaultValue=""
+                            >
+                                <option value="" disabled>
+                                    Select Make
+                                </option>
+                                {makes.map((m, index) => (
+                                    <option value={m} key={index}>
+                                        {m}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
                     </div>
                 </div>
 

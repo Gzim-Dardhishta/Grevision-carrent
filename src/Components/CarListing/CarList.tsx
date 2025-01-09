@@ -3,14 +3,13 @@ import CarCard from "./CarCard"
 import Filters from "./Filters"
 import ViewFilters from "./ViewFilters"
 import { useState } from "react"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuTrigger } from "../ui/dropdown-menu"
-import { Button } from "../ui/button"
 import { CiGrid42 } from "react-icons/ci";
 import Pagination from "./Pagination"
 
 const CarList = () => {
-    const [viewType, setViewType] = useState('list')
+    const [viewType, setViewType] = useState('card')
     const [currentPage, setCurrentPage] = useState<number>(2);
+    const [isFilterHidden, setIsFilterHidden] = useState(false)
 
     const handlePageChange = (page: number) => {
         setCurrentPage(page);
@@ -22,18 +21,20 @@ const CarList = () => {
                 <div className="lg:col-span-1 border p-6 lg:mb-0 mb-10">
                     <div className="lg:block hidden"><Filters /></div>
                     <div className="lg:hidden block">
-                        <DropdownMenu>
-                            <DropdownMenuTrigger asChild>
-                                <div className="flex  justify-between">
-                                    <DropdownMenuLabel className="text-lg font-semibold">Search by Filter</DropdownMenuLabel>
-                                    <Button variant="outline"><CiGrid42 /></Button>
-                                </div>
-                            </DropdownMenuTrigger>
+                        <div className="relative  z-10">
+                            <div onClick={() => setIsFilterHidden(!isFilterHidden)} className="flex justify-between items-center cursor-pointer p-2 border rounded-md bg-white shadow-sm hover:bg-gray-100">
+                                <span className="text-lg font-semibold">Search by Filter</span>
+                                <button className="p-2 border rounded-md bg-gray-100 hover:bg-gray-200">
+                                    <CiGrid42 />
+                                </button>
+                            </div>
 
-                            <DropdownMenuContent className="p-5 w-full">
-                                <Filters />
-                            </DropdownMenuContent>
-                        </DropdownMenu>
+                            {isFilterHidden && (
+                                <div className="absolute left-0 top-full mt-2 w-full bg-white border rounded-md shadow-lg p-5 z-50">
+                                    <Filters />
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
 

@@ -1,6 +1,5 @@
 import { cars } from '@/data/Lists'
 import CarCard from '../CarsHomePage/CarCard'
-import { Button } from '../ui/button'
 
 const CarsList = () => {
     return (
@@ -17,7 +16,7 @@ const CarsList = () => {
                 </div>
 
                 <div className='w-fit mx-auto my-20'>
-                    <Button className='bg-red-700 p-7 px-10 text-lg'>More Listing</Button>
+                    <button className='bg-red-700 p-5 rounded-lg text-white hover:bg-[#1d1c1c] duration-300 ease-in px-10 text-lg'>More Listing</button>
                 </div>
             </div>
         </div>

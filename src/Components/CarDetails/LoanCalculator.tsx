@@ -1,5 +1,3 @@
-import { Button } from "../ui/button"
-import { Input } from "../ui/input"
 import { RxReload } from "react-icons/rx";
 
 const LoanCalculator = () => {
@@ -12,25 +10,25 @@ const LoanCalculator = () => {
             <div className="grid grid-cols-2 gap-5">
                 <div>
                     <label htmlFor="" className="font-medium">Vehicle Price</label>
-                    <Input placeholder="$250000" className="p-6 rounded mt-3 bg-white" />
+                    <input placeholder="$250000" className="p-3 rounded mt-3 bg-white" />
                 </div>
                 <div>
                     <label htmlFor="" className="font-medium">Interest Rate</label>
-                    <Input placeholder="$250000" className="p-6 rounded mt-3 bg-white" />
+                    <input placeholder="$250000" className="p-3 rounded mt-3 bg-white" />
                 </div>
                 <div>
                     <label htmlFor="" className="font-medium">Down Payment</label>
-                    <Input placeholder="$250000" className="p-6 rounded mt-3 bg-white" />
+                    <input placeholder="$250000" className="p-3 rounded mt-3 bg-white" />
                 </div>
                 <div>
                     <label htmlFor="" className="font-medium">Down Payment</label>
-                    <Input placeholder="$250000" className="p-6 rounded mt-3 bg-white" />
+                    <input placeholder="$250000" className="p-3 rounded mt-3 bg-white" />
                 </div>
             </div>
 
             <div className="flex items-center gap-10 mt-10">
                 <div>
-                    <Button className="px-10 py-6 font-normal bg-red-700">Calculate Payment</Button>
+                    <button className="px-10 py-4 rounded-lg font-normal bg-red-700 text-white">Calculate Payment</button>
                 </div>
                 <div className="flex items-center gap-3 text-lg"><RxReload /> Reset All</div>
             </div>

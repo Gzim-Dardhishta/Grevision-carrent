@@ -1,13 +1,4 @@
 import { makes, models } from "@/data/Lists";
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectLabel,
-    SelectTrigger,
-    SelectValue,
-} from "../ui/select";
 import { useState } from "react";
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
@@ -27,35 +18,39 @@ const Filters = () => {
     return (
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 border p-8 bg-white items-center">
             <div>
-                <Select>
-                    <SelectTrigger className="w-full p-6">
-                        <SelectValue placeholder="Make" />
-                    </SelectTrigger>
-                    <SelectContent>
-                        <SelectGroup>
-                            <SelectLabel>Make</SelectLabel>
+                <div className="w-full">
+                    <select className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="" disabled selected hidden>
+                            Make
+                        </option>
+                        <optgroup label="Make">
                             {makes.map((m, index) => (
-                                <SelectItem value={m} key={index}>{m}</SelectItem>
+                                <option value={m} key={index}>
+                                    {m}
+                                </option>
                             ))}
-                        </SelectGroup>
-                    </SelectContent>
-                </Select>
+                        </optgroup>
+                    </select>
+                </div>
+
+
             </div>
 
             <div>
-                <Select>
-                    <SelectTrigger className="w-full p-6">
-                        <SelectValue placeholder="Models" />
-                    </SelectTrigger>
-                    <SelectContent>
-                        <SelectGroup>
-                            <SelectLabel>Models</SelectLabel>
+                <div className="w-full">
+                    <select className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="" disabled selected hidden>
+                            Model
+                        </option>
+                        <optgroup label="Make">
                             {models.map((m, index) => (
-                                <SelectItem value={m} key={index}>{m}</SelectItem>
+                                <option value={m} key={index}>
+                                    {m}
+                                </option>
                             ))}
-                        </SelectGroup>
-                    </SelectContent>
-                </Select>
+                        </optgroup>
+                    </select>
+                </div>
             </div>
 
             <div>

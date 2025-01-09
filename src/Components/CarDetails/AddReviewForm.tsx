@@ -1,8 +1,6 @@
 import { GoPerson } from "react-icons/go";
 import { TfiEmail } from "react-icons/tfi";
 import { TbEdit } from "react-icons/tb";
-import { Button } from "../ui/button";
-
 
 const AddReviewForm = () => {
     return (
@@ -78,12 +76,12 @@ const AddReviewForm = () => {
                 </div>
 
                 {/* Submit Button */}
-                <Button
+                <button
                     type="submit"
                     className="w-full py-2 bg-red-700 text-white font-semibold rounded-md hover:bg-red-600 transition"
                 >
                     Post Comment
-                </Button>
+                </button>
             </form>
         </div>
     )

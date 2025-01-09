@@ -1,10 +1,5 @@
 import { NavLinks } from '@/data/Lists'
 import logo from '../../assets/logo2@.png'
-import {
-    HoverCard,
-    HoverCardContent,
-    HoverCardTrigger,
-} from "../ui/hover-card"
 import { Link } from 'react-router-dom'
 import { FiPlusCircle } from "react-icons/fi";
 import { RiArrowDownSLine } from "react-icons/ri";
@@ -34,18 +29,26 @@ const Navbar: FC<NavBarType> = ({ className, btnClass }) => {
             </Link>
 
             <div className='lg:flex hidden items-center lg:gap-8 gap-5'>
-                <HoverCard>
-                    <HoverCardTrigger className="flex items-center gap-1 cursor-pointer group relative">
+
+                <div className="relative group">
+                    <div className="flex items-center gap-1 cursor-pointer">
                         Home
-                        <RiArrowDownSLine className="group-hover:rotate-180 group-hover:duration-300" />
+                        <RiArrowDownSLine className="group-hover:rotate-180 transition-transform duration-300" />
                         <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-                    </HoverCardTrigger>
-                    <HoverCardContent className='flex flex-col gap-3'>
+                    </div>
+
+                    <div className="absolute top-4 w-44 left-0 mt-2 p-4 bg-white shadow-lg rounded-md flex flex-col gap-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-10">
                         {NavLinks.home?.map((h) => (
-                            <Link to={h.path} className='hover:text-red-500'>{h.text}</Link>
+                            <Link
+                                to={h.path}
+                                key={h.text}
+                                className="hover:text-red-500"
+                            >
+                                {h.text}
+                            </Link>
                         ))}
-                    </HoverCardContent>
-                </HoverCard>
+                    </div>
+                </div>
 
                 <div className='relative'>
                     <Link to={'/'}>Cars</Link>

@@ -6,6 +6,7 @@ import HomePage4 from "./HomePage4";
 import HomePage5 from "./HomePage5";
 import HomePage6 from "./HomePage6";
 import CarListingPage from "./CarListingPage";
+import DashboardPage from "./DashboardPage";
 
 export {
     HomePage,
@@ -15,5 +16,6 @@ export {
     HomePage4,
     HomePage5,
     HomePage6,
-    CarListingPage
+    CarListingPage,
+    DashboardPage
 }

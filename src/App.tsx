@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom"
-import { HomePage, CarDetailsPage, HomePage2, HomePage3, HomePage4, HomePage5, HomePage6, CarListingPage } from "./Pages"
+import { HomePage, CarDetailsPage, HomePage2, HomePage3, HomePage4, HomePage5, HomePage6, CarListingPage, DashboardPage } from "./Pages"
 import SignUpPage from "./Pages/SignUpPage"
 
-function App() {
 
+function App() {
   return (
-    <div className="app">
+    <div className="app overflow-hidden">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/car-details" element={<CarDetailsPage />} />
@@ -16,6 +16,7 @@ function App() {
         <Route path="/home6" element={<HomePage6 />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/car-list" element={<CarListingPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </div>
   )

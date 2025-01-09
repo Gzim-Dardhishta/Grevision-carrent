@@ -1,5 +1,3 @@
-import { Button } from "../ui/button"
-
 const ContactUs = () => {
     return (
         <div className="h-[700px] bg-parallax2 bg-center bg-cover bg-fixed xl:mx-20 mx-10 rounded-3xl flex md:flex-row flex-col justify-between items-center px-10 mt-32 relative">
@@ -54,12 +52,12 @@ const ContactUs = () => {
                             />
                         </div>
                         <div>
-                            <Button
+                            <button
                                 type="submit"
-                                className="w-full bg-red-700 text-white py-6 rounded-none mt-4 transition"
+                                className="bg-red-700 p-5 rounded-lg text-white hover:bg-[#1d1c1c] duration-300 ease-in px-10 text-lg w-full"
                             >
                                 Send Message
-                            </Button>
+                            </button>
                         </div>
                     </form>
                 </div>
